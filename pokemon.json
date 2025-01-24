@@ -197,7 +197,7 @@
   },
   {
     "Index": 29,
-    "Name": "Nidoran♀",
+    "Name": "Nidoran-F",
     "Type": "Poison",
     "HP": 55,
     "Stage": 1
@@ -218,7 +218,7 @@
   },
   {
     "Index": 32,
-    "Name": "Nidoran♂",
+    "Name": "Nidoran-M",
     "Type": "Poison",
     "HP": 46,
     "Stage": 1
@@ -577,8 +577,7 @@
     "Index": 83,
     "Name": "Farfetch'd",
     "Type": "Normal",
-    "HP": 52,
-    "Stage": ""
+    "HP": 52
   },
   {
     "Index": 84,
@@ -661,8 +660,7 @@
     "Index": 95,
     "Name": "Onix",
     "Type": "Rock",
-    "HP": 35,
-    "Stage": ""
+    "HP": 35
   },
   {
     "Index": 96,
@@ -738,22 +736,19 @@
     "Index": 106,
     "Name": "Hitmonlee",
     "Type": "Fighting",
-    "HP": 50,
-    "Stage": ""
+    "HP": 50
   },
   {
     "Index": 107,
     "Name": "Hitmonchan",
     "Type": "Fighting",
-    "HP": 50,
-    "Stage": ""
+    "HP": 50
   },
   {
     "Index": 108,
     "Name": "Lickitung",
     "Type": "Normal",
-    "HP": 90,
-    "Stage": ""
+    "HP": 90
   },
   {
     "Index": 109,
@@ -787,22 +782,19 @@
     "Index": 113,
     "Name": "Chansey",
     "Type": "Normal",
-    "HP": 250,
-    "Stage": ""
+    "HP": 250
   },
   {
     "Index": 114,
     "Name": "Tangela",
     "Type": "Grass",
-    "HP": 65,
-    "Stage": ""
+    "HP": 65
   },
   {
     "Index": 115,
     "Name": "Kangaskhan",
     "Type": "Normal",
-    "HP": 105,
-    "Stage": ""
+    "HP": 105
   },
   {
     "Index": 116,
@@ -848,52 +840,45 @@
   },
   {
     "Index": 122,
-    "Name": "Mr. Mime",
+    "Name": "Mr.Mime",
     "Type": "Psychic",
-    "HP": 40,
-    "Stage": ""
+    "HP": 40
   },
   {
     "Index": 123,
     "Name": "Scyther",
     "Type": "Bug",
-    "HP": 70,
-    "Stage": ""
+    "HP": 70
   },
   {
     "Index": 124,
     "Name": "Jynx",
     "Type": "Ice",
-    "HP": 65,
-    "Stage": ""
+    "HP": 65
   },
   {
     "Index": 125,
     "Name": "Electabuzz",
     "Type": "Electric",
-    "HP": 65,
-    "Stage": ""
+    "HP": 65
   },
   {
     "Index": 126,
     "Name": "Magmar",
     "Type": "Fire",
-    "HP": 65,
-    "Stage": ""
+    "HP": 65
   },
   {
     "Index": 127,
     "Name": "Pinsir",
     "Type": "Bug",
-    "HP": 65,
-    "Stage": ""
+    "HP": 65
   },
   {
     "Index": 128,
     "Name": "Tauros",
     "Type": "Normal",
-    "HP": 75,
-    "Stage": ""
+    "HP": 75
   },
   {
     "Index": 129,
@@ -913,15 +898,13 @@
     "Index": 131,
     "Name": "Lapras",
     "Type": "Water",
-    "HP": 130,
-    "Stage": ""
+    "HP": 130
   },
   {
     "Index": 132,
     "Name": "Ditto",
     "Type": "Normal",
-    "HP": 48,
-    "Stage": ""
+    "HP": 48
   },
   {
     "Index": 133,
@@ -955,8 +938,7 @@
     "Index": 137,
     "Name": "Porygon",
     "Type": "Normal",
-    "HP": 65,
-    "Stage": ""
+    "HP": 65
   },
   {
     "Index": 138,
@@ -990,36 +972,31 @@
     "Index": 142,
     "Name": "Aerodactyl",
     "Type": "Rock",
-    "HP": 80,
-    "Stage": ""
+    "HP": 80
   },
   {
     "Index": 143,
     "Name": "Snorlax",
     "Type": "Normal",
-    "HP": 160,
-    "Stage": ""
+    "HP": 160
   },
   {
     "Index": 144,
     "Name": "Articuno",
     "Type": "Ice",
-    "HP": 90,
-    "Stage": ""
+    "HP": 90
   },
   {
     "Index": 145,
     "Name": "Zapdos",
     "Type": "Electric",
-    "HP": 90,
-    "Stage": ""
+    "HP": 90
   },
   {
     "Index": 146,
     "Name": "Moltres",
     "Type": "Fire",
-    "HP": 90,
-    "Stage": ""
+    "HP": 90
   },
   {
     "Index": 147,
@@ -1046,14 +1023,12 @@
     "Index": 150,
     "Name": "Mewtwo",
     "Type": "Psychic",
-    "HP": 106,
-    "Stage": ""
+    "HP": 106
   },
   {
     "Index": 151,
     "Name": "Mew",
     "Type": "Psychic",
-    "HP": 100,
-    "Stage": ""
+    "HP": 100
   }
 ]
