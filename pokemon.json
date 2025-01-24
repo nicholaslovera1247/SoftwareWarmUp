@@ -197,7 +197,7 @@
   },
   {
     "Index": 29,
-    "Name": "Nidoran♀",
+    "Name": "Nidoran-F",
     "Type": "Poison",
     "HP": 55,
     "Stage": 1
@@ -218,7 +218,7 @@
   },
   {
     "Index": 32,
-    "Name": "Nidoran♂",
+    "Name": "Nidoran-M",
     "Type": "Poison",
     "HP": 46,
     "Stage": 1
@@ -840,7 +840,7 @@
   },
   {
     "Index": 122,
-    "Name": "Mr. Mime",
+    "Name": "Mr.Mime",
     "Type": "Psychic",
     "HP": 40
   },
