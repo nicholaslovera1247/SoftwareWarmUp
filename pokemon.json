@@ -1,0 +1,1059 @@
+[
+  {
+    "Index": 1,
+    "Name": "Bulbasaur",
+    "Type": "Grass",
+    "HP": 45,
+    "Stage": 1
+  },
+  {
+    "Index": 2,
+    "Name": "Ivysaur",
+    "Type": "Grass",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 3,
+    "Name": "Venusaur",
+    "Type": "Grass",
+    "HP": 80,
+    "Stage": 3
+  },
+  {
+    "Index": 4,
+    "Name": "Charmander",
+    "Type": "Fire",
+    "HP": 39,
+    "Stage": 1
+  },
+  {
+    "Index": 5,
+    "Name": "Charmeleon",
+    "Type": "Fire",
+    "HP": 58,
+    "Stage": 2
+  },
+  {
+    "Index": 6,
+    "Name": "Charizard",
+    "Type": "Fire",
+    "HP": 78,
+    "Stage": 3
+  },
+  {
+    "Index": 7,
+    "Name": "Squirtle",
+    "Type": "Water",
+    "HP": 44,
+    "Stage": 1
+  },
+  {
+    "Index": 8,
+    "Name": "Wartortle",
+    "Type": "Water",
+    "HP": 59,
+    "Stage": 2
+  },
+  {
+    "Index": 9,
+    "Name": "Blastoise",
+    "Type": "Water",
+    "HP": 79,
+    "Stage": 3
+  },
+  {
+    "Index": 10,
+    "Name": "Caterpie",
+    "Type": "Bug",
+    "HP": 45,
+    "Stage": 1
+  },
+  {
+    "Index": 11,
+    "Name": "Metapod",
+    "Type": "Bug",
+    "HP": 50,
+    "Stage": 2
+  },
+  {
+    "Index": 12,
+    "Name": "Butterfree",
+    "Type": "Bug",
+    "HP": 60,
+    "Stage": 3
+  },
+  {
+    "Index": 13,
+    "Name": "Weedle",
+    "Type": "Bug",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 14,
+    "Name": "Kakuna",
+    "Type": "Bug",
+    "HP": 45,
+    "Stage": 2
+  },
+  {
+    "Index": 15,
+    "Name": "Beedrill",
+    "Type": "Bug",
+    "HP": 65,
+    "Stage": 3
+  },
+  {
+    "Index": 16,
+    "Name": "Pidgey",
+    "Type": "Normal",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 17,
+    "Name": "Pidgeotto",
+    "Type": "Normal",
+    "HP": 63,
+    "Stage": 2
+  },
+  {
+    "Index": 18,
+    "Name": "Pidgeot",
+    "Type": "Normal",
+    "HP": 83,
+    "Stage": 3
+  },
+  {
+    "Index": 19,
+    "Name": "Rattata",
+    "Type": "Normal",
+    "HP": 30,
+    "Stage": 1
+  },
+  {
+    "Index": 20,
+    "Name": "Raticate",
+    "Type": "Normal",
+    "HP": 55,
+    "Stage": 2
+  },
+  {
+    "Index": 21,
+    "Name": "Spearow",
+    "Type": "Normal",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 22,
+    "Name": "Fearow",
+    "Type": "Normal",
+    "HP": 65,
+    "Stage": 2
+  },
+  {
+    "Index": 23,
+    "Name": "Ekans",
+    "Type": "Poison",
+    "HP": 35,
+    "Stage": 1
+  },
+  {
+    "Index": 24,
+    "Name": "Arbok",
+    "Type": "Poison",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 25,
+    "Name": "Pikachu",
+    "Type": "Electric",
+    "HP": 35,
+    "Stage": 1
+  },
+  {
+    "Index": 26,
+    "Name": "Raichu",
+    "Type": "Electric",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 27,
+    "Name": "Sandshrew",
+    "Type": "Ground",
+    "HP": 50,
+    "Stage": 1
+  },
+  {
+    "Index": 28,
+    "Name": "Sandslash",
+    "Type": "Ground",
+    "HP": 75,
+    "Stage": 2
+  },
+  {
+    "Index": 29,
+    "Name": "Nidoran♀",
+    "Type": "Poison",
+    "HP": 55,
+    "Stage": 1
+  },
+  {
+    "Index": 30,
+    "Name": "Nidorina",
+    "Type": "Poison",
+    "HP": 70,
+    "Stage": 2
+  },
+  {
+    "Index": 31,
+    "Name": "Nidoqueen",
+    "Type": "Poison",
+    "HP": 90,
+    "Stage": 3
+  },
+  {
+    "Index": 32,
+    "Name": "Nidoran♂",
+    "Type": "Poison",
+    "HP": 46,
+    "Stage": 1
+  },
+  {
+    "Index": 33,
+    "Name": "Nidorino",
+    "Type": "Poison",
+    "HP": 61,
+    "Stage": 2
+  },
+  {
+    "Index": 34,
+    "Name": "Nidoking",
+    "Type": "Poison",
+    "HP": 81,
+    "Stage": 3
+  },
+  {
+    "Index": 35,
+    "Name": "Clefairy",
+    "Type": "Fairy",
+    "HP": 70,
+    "Stage": 1
+  },
+  {
+    "Index": 36,
+    "Name": "Clefable",
+    "Type": "Fairy",
+    "HP": 95,
+    "Stage": 2
+  },
+  {
+    "Index": 37,
+    "Name": "Vulpix",
+    "Type": "Fire",
+    "HP": 38,
+    "Stage": 1
+  },
+  {
+    "Index": 38,
+    "Name": "Ninetales",
+    "Type": "Fire",
+    "HP": 73,
+    "Stage": 2
+  },
+  {
+    "Index": 39,
+    "Name": "Jigglypuff",
+    "Type": "Normal",
+    "HP": 115,
+    "Stage": 1
+  },
+  {
+    "Index": 40,
+    "Name": "Wigglytuff",
+    "Type": "Normal",
+    "HP": 140,
+    "Stage": 2
+  },
+  {
+    "Index": 41,
+    "Name": "Zubat",
+    "Type": "Poison",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 42,
+    "Name": "Golbat",
+    "Type": "Poison",
+    "HP": 75,
+    "Stage": 2
+  },
+  {
+    "Index": 43,
+    "Name": "Oddish",
+    "Type": "Grass",
+    "HP": 45,
+    "Stage": 1
+  },
+  {
+    "Index": 44,
+    "Name": "Gloom",
+    "Type": "Grass",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 45,
+    "Name": "Vileplume",
+    "Type": "Grass",
+    "HP": 75,
+    "Stage": 3
+  },
+  {
+    "Index": 46,
+    "Name": "Paras",
+    "Type": "Bug",
+    "HP": 35,
+    "Stage": 1
+  },
+  {
+    "Index": 47,
+    "Name": "Parasect",
+    "Type": "Bug",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 48,
+    "Name": "Venonat",
+    "Type": "Bug",
+    "HP": 60,
+    "Stage": 1
+  },
+  {
+    "Index": 49,
+    "Name": "Venomoth",
+    "Type": "Bug",
+    "HP": 70,
+    "Stage": 2
+  },
+  {
+    "Index": 50,
+    "Name": "Diglett",
+    "Type": "Ground",
+    "HP": 10,
+    "Stage": 1
+  },
+  {
+    "Index": 51,
+    "Name": "Dugtrio",
+    "Type": "Ground",
+    "HP": 35,
+    "Stage": 2
+  },
+  {
+    "Index": 52,
+    "Name": "Meowth",
+    "Type": "Normal",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 53,
+    "Name": "Persian",
+    "Type": "Normal",
+    "HP": 65,
+    "Stage": 2
+  },
+  {
+    "Index": 54,
+    "Name": "Psyduck",
+    "Type": "Water",
+    "HP": 50,
+    "Stage": 1
+  },
+  {
+    "Index": 55,
+    "Name": "Golduck",
+    "Type": "Water",
+    "HP": 80,
+    "Stage": 2
+  },
+  {
+    "Index": 56,
+    "Name": "Mankey",
+    "Type": "Fighting",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 57,
+    "Name": "Primeape",
+    "Type": "Fighting",
+    "HP": 65,
+    "Stage": 2
+  },
+  {
+    "Index": 58,
+    "Name": "Growlithe",
+    "Type": "Fire",
+    "HP": 55,
+    "Stage": 1
+  },
+  {
+    "Index": 59,
+    "Name": "Arcanine",
+    "Type": "Fire",
+    "HP": 90,
+    "Stage": 2
+  },
+  {
+    "Index": 60,
+    "Name": "Poliwag",
+    "Type": "Water",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 61,
+    "Name": "Poliwhirl",
+    "Type": "Water",
+    "HP": 65,
+    "Stage": 2
+  },
+  {
+    "Index": 62,
+    "Name": "Poliwrath",
+    "Type": "Water",
+    "HP": 90,
+    "Stage": 3
+  },
+  {
+    "Index": 63,
+    "Name": "Abra",
+    "Type": "Psychic",
+    "HP": 25,
+    "Stage": 1
+  },
+  {
+    "Index": 64,
+    "Name": "Kadabra",
+    "Type": "Psychic",
+    "HP": 40,
+    "Stage": 2
+  },
+  {
+    "Index": 65,
+    "Name": "Alakazam",
+    "Type": "Psychic",
+    "HP": 55,
+    "Stage": 3
+  },
+  {
+    "Index": 66,
+    "Name": "Machop",
+    "Type": "Fighting",
+    "HP": 70,
+    "Stage": 1
+  },
+  {
+    "Index": 67,
+    "Name": "Machoke",
+    "Type": "Fighting",
+    "HP": 80,
+    "Stage": 2
+  },
+  {
+    "Index": 68,
+    "Name": "Machamp",
+    "Type": "Fighting",
+    "HP": 90,
+    "Stage": 3
+  },
+  {
+    "Index": 69,
+    "Name": "Bellsprout",
+    "Type": "Grass",
+    "HP": 50,
+    "Stage": 1
+  },
+  {
+    "Index": 70,
+    "Name": "Weepinbell",
+    "Type": "Grass",
+    "HP": 65,
+    "Stage": 2
+  },
+  {
+    "Index": 71,
+    "Name": "Victreebel",
+    "Type": "Grass",
+    "HP": 80,
+    "Stage": 3
+  },
+  {
+    "Index": 72,
+    "Name": "Tentacool",
+    "Type": "Water",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 73,
+    "Name": "Tentacruel",
+    "Type": "Water",
+    "HP": 80,
+    "Stage": 2
+  },
+  {
+    "Index": 74,
+    "Name": "Geodude",
+    "Type": "Rock",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 75,
+    "Name": "Graveler",
+    "Type": "Rock",
+    "HP": 55,
+    "Stage": 2
+  },
+  {
+    "Index": 76,
+    "Name": "Golem",
+    "Type": "Rock",
+    "HP": 80,
+    "Stage": 3
+  },
+  {
+    "Index": 77,
+    "Name": "Ponyta",
+    "Type": "Fire",
+    "HP": 50,
+    "Stage": 1
+  },
+  {
+    "Index": 78,
+    "Name": "Rapidash",
+    "Type": "Fire",
+    "HP": 65,
+    "Stage": 2
+  },
+  {
+    "Index": 79,
+    "Name": "Slowpoke",
+    "Type": "Water",
+    "HP": 90,
+    "Stage": 1
+  },
+  {
+    "Index": 80,
+    "Name": "Slowbro",
+    "Type": "Water",
+    "HP": 95,
+    "Stage": 2
+  },
+  {
+    "Index": 81,
+    "Name": "Magnemite",
+    "Type": "Electric",
+    "HP": 25,
+    "Stage": 1
+  },
+  {
+    "Index": 82,
+    "Name": "Magneton",
+    "Type": "Electric",
+    "HP": 50,
+    "Stage": 2
+  },
+  {
+    "Index": 83,
+    "Name": "Farfetch'd",
+    "Type": "Normal",
+    "HP": 52,
+    "Stage": ""
+  },
+  {
+    "Index": 84,
+    "Name": "Doduo",
+    "Type": "Normal",
+    "HP": 35,
+    "Stage": 1
+  },
+  {
+    "Index": 85,
+    "Name": "Dodrio",
+    "Type": "Normal",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 86,
+    "Name": "Seel",
+    "Type": "Water",
+    "HP": 65,
+    "Stage": 1
+  },
+  {
+    "Index": 87,
+    "Name": "Dewgong",
+    "Type": "Water",
+    "HP": 90,
+    "Stage": 2
+  },
+  {
+    "Index": 88,
+    "Name": "Grimer",
+    "Type": "Poison",
+    "HP": 80,
+    "Stage": 1
+  },
+  {
+    "Index": 89,
+    "Name": "Muk",
+    "Type": "Poison",
+    "HP": 105,
+    "Stage": 2
+  },
+  {
+    "Index": 90,
+    "Name": "Shellder",
+    "Type": "Water",
+    "HP": 30,
+    "Stage": 1
+  },
+  {
+    "Index": 91,
+    "Name": "Cloyster",
+    "Type": "Water",
+    "HP": 50,
+    "Stage": 2
+  },
+  {
+    "Index": 92,
+    "Name": "Gastly",
+    "Type": "Ghost",
+    "HP": 30,
+    "Stage": 1
+  },
+  {
+    "Index": 93,
+    "Name": "Haunter",
+    "Type": "Ghost",
+    "HP": 45,
+    "Stage": 2
+  },
+  {
+    "Index": 94,
+    "Name": "Gengar",
+    "Type": "Ghost",
+    "HP": 60,
+    "Stage": 3
+  },
+  {
+    "Index": 95,
+    "Name": "Onix",
+    "Type": "Rock",
+    "HP": 35,
+    "Stage": ""
+  },
+  {
+    "Index": 96,
+    "Name": "Drowzee",
+    "Type": "Psychic",
+    "HP": 60,
+    "Stage": 1
+  },
+  {
+    "Index": 97,
+    "Name": "Hypno",
+    "Type": "Psychic",
+    "HP": 85,
+    "Stage": 2
+  },
+  {
+    "Index": 98,
+    "Name": "Krabby",
+    "Type": "Water",
+    "HP": 30,
+    "Stage": 1
+  },
+  {
+    "Index": 99,
+    "Name": "Kingler",
+    "Type": "Water",
+    "HP": 55,
+    "Stage": 2
+  },
+  {
+    "Index": 100,
+    "Name": "Voltorb",
+    "Type": "Electric",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 101,
+    "Name": "Electrode",
+    "Type": "Electric",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 102,
+    "Name": "Exeggcute",
+    "Type": "Grass",
+    "HP": 60,
+    "Stage": 1
+  },
+  {
+    "Index": 103,
+    "Name": "Exeggutor",
+    "Type": "Grass",
+    "HP": 95,
+    "Stage": 2
+  },
+  {
+    "Index": 104,
+    "Name": "Cubone",
+    "Type": "Ground",
+    "HP": 50,
+    "Stage": 1
+  },
+  {
+    "Index": 105,
+    "Name": "Marowak",
+    "Type": "Ground",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 106,
+    "Name": "Hitmonlee",
+    "Type": "Fighting",
+    "HP": 50,
+    "Stage": ""
+  },
+  {
+    "Index": 107,
+    "Name": "Hitmonchan",
+    "Type": "Fighting",
+    "HP": 50,
+    "Stage": ""
+  },
+  {
+    "Index": 108,
+    "Name": "Lickitung",
+    "Type": "Normal",
+    "HP": 90,
+    "Stage": ""
+  },
+  {
+    "Index": 109,
+    "Name": "Koffing",
+    "Type": "Poison",
+    "HP": 40,
+    "Stage": 1
+  },
+  {
+    "Index": 110,
+    "Name": "Weezing",
+    "Type": "Poison",
+    "HP": 65,
+    "Stage": 2
+  },
+  {
+    "Index": 111,
+    "Name": "Rhyhorn",
+    "Type": "Ground",
+    "HP": 80,
+    "Stage": 1
+  },
+  {
+    "Index": 112,
+    "Name": "Rhydon",
+    "Type": "Ground",
+    "HP": 105,
+    "Stage": 2
+  },
+  {
+    "Index": 113,
+    "Name": "Chansey",
+    "Type": "Normal",
+    "HP": 250,
+    "Stage": ""
+  },
+  {
+    "Index": 114,
+    "Name": "Tangela",
+    "Type": "Grass",
+    "HP": 65,
+    "Stage": ""
+  },
+  {
+    "Index": 115,
+    "Name": "Kangaskhan",
+    "Type": "Normal",
+    "HP": 105,
+    "Stage": ""
+  },
+  {
+    "Index": 116,
+    "Name": "Horsea",
+    "Type": "Water",
+    "HP": 30,
+    "Stage": 1
+  },
+  {
+    "Index": 117,
+    "Name": "Seadra",
+    "Type": "Water",
+    "HP": 55,
+    "Stage": 2
+  },
+  {
+    "Index": 118,
+    "Name": "Goldeen",
+    "Type": "Water",
+    "HP": 45,
+    "Stage": 1
+  },
+  {
+    "Index": 119,
+    "Name": "Seaking",
+    "Type": "Water",
+    "HP": 80,
+    "Stage": 2
+  },
+  {
+    "Index": 120,
+    "Name": "Staryu",
+    "Type": "Water",
+    "HP": 30,
+    "Stage": 1
+  },
+  {
+    "Index": 121,
+    "Name": "Starmie",
+    "Type": "Water",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 122,
+    "Name": "Mr. Mime",
+    "Type": "Psychic",
+    "HP": 40,
+    "Stage": ""
+  },
+  {
+    "Index": 123,
+    "Name": "Scyther",
+    "Type": "Bug",
+    "HP": 70,
+    "Stage": ""
+  },
+  {
+    "Index": 124,
+    "Name": "Jynx",
+    "Type": "Ice",
+    "HP": 65,
+    "Stage": ""
+  },
+  {
+    "Index": 125,
+    "Name": "Electabuzz",
+    "Type": "Electric",
+    "HP": 65,
+    "Stage": ""
+  },
+  {
+    "Index": 126,
+    "Name": "Magmar",
+    "Type": "Fire",
+    "HP": 65,
+    "Stage": ""
+  },
+  {
+    "Index": 127,
+    "Name": "Pinsir",
+    "Type": "Bug",
+    "HP": 65,
+    "Stage": ""
+  },
+  {
+    "Index": 128,
+    "Name": "Tauros",
+    "Type": "Normal",
+    "HP": 75,
+    "Stage": ""
+  },
+  {
+    "Index": 129,
+    "Name": "Magikarp",
+    "Type": "Water",
+    "HP": 20,
+    "Stage": 1
+  },
+  {
+    "Index": 130,
+    "Name": "Gyarados",
+    "Type": "Water",
+    "HP": 95,
+    "Stage": 2
+  },
+  {
+    "Index": 131,
+    "Name": "Lapras",
+    "Type": "Water",
+    "HP": 130,
+    "Stage": ""
+  },
+  {
+    "Index": 132,
+    "Name": "Ditto",
+    "Type": "Normal",
+    "HP": 48,
+    "Stage": ""
+  },
+  {
+    "Index": 133,
+    "Name": "Eevee",
+    "Type": "Normal",
+    "HP": 55,
+    "Stage": 1
+  },
+  {
+    "Index": 134,
+    "Name": "Vaporeon",
+    "Type": "Water",
+    "HP": 130,
+    "Stage": 2
+  },
+  {
+    "Index": 135,
+    "Name": "Jolteon",
+    "Type": "Electric",
+    "HP": 65,
+    "Stage": 2
+  },
+  {
+    "Index": 136,
+    "Name": "Flareon",
+    "Type": "Fire",
+    "HP": 65,
+    "Stage": 2
+  },
+  {
+    "Index": 137,
+    "Name": "Porygon",
+    "Type": "Normal",
+    "HP": 65,
+    "Stage": ""
+  },
+  {
+    "Index": 138,
+    "Name": "Omanyte",
+    "Type": "Rock",
+    "HP": 35,
+    "Stage": 1
+  },
+  {
+    "Index": 139,
+    "Name": "Omastar",
+    "Type": "Rock",
+    "HP": 70,
+    "Stage": 2
+  },
+  {
+    "Index": 140,
+    "Name": "Kabuto",
+    "Type": "Rock",
+    "HP": 30,
+    "Stage": 1
+  },
+  {
+    "Index": 141,
+    "Name": "Kabutops",
+    "Type": "Rock",
+    "HP": 60,
+    "Stage": 2
+  },
+  {
+    "Index": 142,
+    "Name": "Aerodactyl",
+    "Type": "Rock",
+    "HP": 80,
+    "Stage": ""
+  },
+  {
+    "Index": 143,
+    "Name": "Snorlax",
+    "Type": "Normal",
+    "HP": 160,
+    "Stage": ""
+  },
+  {
+    "Index": 144,
+    "Name": "Articuno",
+    "Type": "Ice",
+    "HP": 90,
+    "Stage": ""
+  },
+  {
+    "Index": 145,
+    "Name": "Zapdos",
+    "Type": "Electric",
+    "HP": 90,
+    "Stage": ""
+  },
+  {
+    "Index": 146,
+    "Name": "Moltres",
+    "Type": "Fire",
+    "HP": 90,
+    "Stage": ""
+  },
+  {
+    "Index": 147,
+    "Name": "Dratini",
+    "Type": "Dragon",
+    "HP": 41,
+    "Stage": 1
+  },
+  {
+    "Index": 148,
+    "Name": "Dragonair",
+    "Type": "Dragon",
+    "HP": 61,
+    "Stage": 2
+  },
+  {
+    "Index": 149,
+    "Name": "Dragonite",
+    "Type": "Dragon",
+    "HP": 91,
+    "Stage": 3
+  },
+  {
+    "Index": 150,
+    "Name": "Mewtwo",
+    "Type": "Psychic",
+    "HP": 106,
+    "Stage": ""
+  },
+  {
+    "Index": 151,
+    "Name": "Mew",
+    "Type": "Psychic",
+    "HP": 100,
+    "Stage": ""
+  }
+]
