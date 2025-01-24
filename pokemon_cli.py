@@ -1,14 +1,23 @@
 def take_input():
-    quit = False;
+    while True:
+        print('> ', end ='')
+        input_str = input().lower().strip().split(' ')
 
-    while not quit:
-        print('>', end ='')
-        query = input().lower().strip().split(' ')
+        if input_str[0] == 'quit':
+            break
 
-        if query[0] == 'quit':
-            quit = True;
+        query = []
+        subquery = []
+        for word in input_str:
+            if word not in {'and', 'or'}:
+                subquery.append(word)
+            else:
+                query.append(subquery)
+                subquery = []
+                query.append(word)
+        query.append(subquery)
 
-
+        print(query)
 
 take_input()
 print("Goodbye!")
