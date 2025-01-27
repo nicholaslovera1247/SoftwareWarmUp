@@ -1,3 +1,8 @@
+KEYS = ['index', 'name', 'type', 'hp', 'stage', 'quit', 'help']
+OPS = ['of', '==', '!=', '<=', '>=', '<', '>']
+TYPES = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poison', 
+        'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 'dragon', 'dark', 'fairy']
+
 def take_input():
     while True:
         print('> ', end ='')
