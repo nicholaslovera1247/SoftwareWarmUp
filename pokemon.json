@@ -1,1034 +1,1034 @@
 [
   {
-    "Index": 1,
-    "Name": "Bulbasaur",
-    "Type": "Grass",
-    "HP": 45,
-    "Stage": 1
+    "index": 1,
+    "name": "bulbasaur",
+    "type": "grass",
+    "hp": 45,
+    "stage": 1
   },
   {
-    "Index": 2,
-    "Name": "Ivysaur",
-    "Type": "Grass",
-    "HP": 60,
-    "Stage": 2
+    "index": 2,
+    "name": "ivysaur",
+    "type": "grass",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 3,
-    "Name": "Venusaur",
-    "Type": "Grass",
-    "HP": 80,
-    "Stage": 3
+    "index": 3,
+    "name": "venusaur",
+    "type": "grass",
+    "hp": 80,
+    "stage": 3
   },
   {
-    "Index": 4,
-    "Name": "Charmander",
-    "Type": "Fire",
-    "HP": 39,
-    "Stage": 1
+    "index": 4,
+    "name": "charmander",
+    "type": "fire",
+    "hp": 39,
+    "stage": 1
   },
   {
-    "Index": 5,
-    "Name": "Charmeleon",
-    "Type": "Fire",
-    "HP": 58,
-    "Stage": 2
+    "index": 5,
+    "name": "charmeleon",
+    "type": "fire",
+    "hp": 58,
+    "stage": 2
   },
   {
-    "Index": 6,
-    "Name": "Charizard",
-    "Type": "Fire",
-    "HP": 78,
-    "Stage": 3
+    "index": 6,
+    "name": "charizard",
+    "type": "fire",
+    "hp": 78,
+    "stage": 3
   },
   {
-    "Index": 7,
-    "Name": "Squirtle",
-    "Type": "Water",
-    "HP": 44,
-    "Stage": 1
+    "index": 7,
+    "name": "squirtle",
+    "type": "water",
+    "hp": 44,
+    "stage": 1
   },
   {
-    "Index": 8,
-    "Name": "Wartortle",
-    "Type": "Water",
-    "HP": 59,
-    "Stage": 2
+    "index": 8,
+    "name": "wartortle",
+    "type": "water",
+    "hp": 59,
+    "stage": 2
   },
   {
-    "Index": 9,
-    "Name": "Blastoise",
-    "Type": "Water",
-    "HP": 79,
-    "Stage": 3
+    "index": 9,
+    "name": "blastoise",
+    "type": "water",
+    "hp": 79,
+    "stage": 3
   },
   {
-    "Index": 10,
-    "Name": "Caterpie",
-    "Type": "Bug",
-    "HP": 45,
-    "Stage": 1
+    "index": 10,
+    "name": "caterpie",
+    "type": "bug",
+    "hp": 45,
+    "stage": 1
   },
   {
-    "Index": 11,
-    "Name": "Metapod",
-    "Type": "Bug",
-    "HP": 50,
-    "Stage": 2
+    "index": 11,
+    "name": "metapod",
+    "type": "bug",
+    "hp": 50,
+    "stage": 2
   },
   {
-    "Index": 12,
-    "Name": "Butterfree",
-    "Type": "Bug",
-    "HP": 60,
-    "Stage": 3
+    "index": 12,
+    "name": "butterfree",
+    "type": "bug",
+    "hp": 60,
+    "stage": 3
   },
   {
-    "Index": 13,
-    "Name": "Weedle",
-    "Type": "Bug",
-    "HP": 40,
-    "Stage": 1
+    "index": 13,
+    "name": "weedle",
+    "type": "bug",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 14,
-    "Name": "Kakuna",
-    "Type": "Bug",
-    "HP": 45,
-    "Stage": 2
+    "index": 14,
+    "name": "kakuna",
+    "type": "bug",
+    "hp": 45,
+    "stage": 2
   },
   {
-    "Index": 15,
-    "Name": "Beedrill",
-    "Type": "Bug",
-    "HP": 65,
-    "Stage": 3
+    "index": 15,
+    "name": "beedrill",
+    "type": "bug",
+    "hp": 65,
+    "stage": 3
   },
   {
-    "Index": 16,
-    "Name": "Pidgey",
-    "Type": "Normal",
-    "HP": 40,
-    "Stage": 1
+    "index": 16,
+    "name": "pidgey",
+    "type": "normal",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 17,
-    "Name": "Pidgeotto",
-    "Type": "Normal",
-    "HP": 63,
-    "Stage": 2
+    "index": 17,
+    "name": "pidgeotto",
+    "type": "normal",
+    "hp": 63,
+    "stage": 2
   },
   {
-    "Index": 18,
-    "Name": "Pidgeot",
-    "Type": "Normal",
-    "HP": 83,
-    "Stage": 3
+    "index": 18,
+    "name": "pidgeot",
+    "type": "normal",
+    "hp": 83,
+    "stage": 3
   },
   {
-    "Index": 19,
-    "Name": "Rattata",
-    "Type": "Normal",
-    "HP": 30,
-    "Stage": 1
+    "index": 19,
+    "name": "rattata",
+    "type": "normal",
+    "hp": 30,
+    "stage": 1
   },
   {
-    "Index": 20,
-    "Name": "Raticate",
-    "Type": "Normal",
-    "HP": 55,
-    "Stage": 2
+    "index": 20,
+    "name": "raticate",
+    "type": "normal",
+    "hp": 55,
+    "stage": 2
   },
   {
-    "Index": 21,
-    "Name": "Spearow",
-    "Type": "Normal",
-    "HP": 40,
-    "Stage": 1
+    "index": 21,
+    "name": "spearow",
+    "type": "normal",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 22,
-    "Name": "Fearow",
-    "Type": "Normal",
-    "HP": 65,
-    "Stage": 2
+    "index": 22,
+    "name": "fearow",
+    "type": "normal",
+    "hp": 65,
+    "stage": 2
   },
   {
-    "Index": 23,
-    "Name": "Ekans",
-    "Type": "Poison",
-    "HP": 35,
-    "Stage": 1
+    "index": 23,
+    "name": "ekans",
+    "type": "poison",
+    "hp": 35,
+    "stage": 1
   },
   {
-    "Index": 24,
-    "Name": "Arbok",
-    "Type": "Poison",
-    "HP": 60,
-    "Stage": 2
+    "index": 24,
+    "name": "arbok",
+    "type": "poison",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 25,
-    "Name": "Pikachu",
-    "Type": "Electric",
-    "HP": 35,
-    "Stage": 1
+    "index": 25,
+    "name": "pikachu",
+    "type": "electric",
+    "hp": 35,
+    "stage": 1
   },
   {
-    "Index": 26,
-    "Name": "Raichu",
-    "Type": "Electric",
-    "HP": 60,
-    "Stage": 2
+    "index": 26,
+    "name": "raichu",
+    "type": "electric",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 27,
-    "Name": "Sandshrew",
-    "Type": "Ground",
-    "HP": 50,
-    "Stage": 1
+    "index": 27,
+    "name": "sandshrew",
+    "type": "ground",
+    "hp": 50,
+    "stage": 1
   },
   {
-    "Index": 28,
-    "Name": "Sandslash",
-    "Type": "Ground",
-    "HP": 75,
-    "Stage": 2
+    "index": 28,
+    "name": "sandslash",
+    "type": "ground",
+    "hp": 75,
+    "stage": 2
   },
   {
-    "Index": 29,
-    "Name": "Nidoran-F",
-    "Type": "Poison",
-    "HP": 55,
-    "Stage": 1
+    "index": 29,
+    "name": "nidoran-f",
+    "type": "poison",
+    "hp": 55,
+    "stage": 1
   },
   {
-    "Index": 30,
-    "Name": "Nidorina",
-    "Type": "Poison",
-    "HP": 70,
-    "Stage": 2
+    "index": 30,
+    "name": "nidorina",
+    "type": "poison",
+    "hp": 70,
+    "stage": 2
   },
   {
-    "Index": 31,
-    "Name": "Nidoqueen",
-    "Type": "Poison",
-    "HP": 90,
-    "Stage": 3
+    "index": 31,
+    "name": "nidoqueen",
+    "type": "poison",
+    "hp": 90,
+    "stage": 3
   },
   {
-    "Index": 32,
-    "Name": "Nidoran-M",
-    "Type": "Poison",
-    "HP": 46,
-    "Stage": 1
+    "index": 32,
+    "name": "nidoran-m",
+    "type": "poison",
+    "hp": 46,
+    "stage": 1
   },
   {
-    "Index": 33,
-    "Name": "Nidorino",
-    "Type": "Poison",
-    "HP": 61,
-    "Stage": 2
+    "index": 33,
+    "name": "nidorino",
+    "type": "poison",
+    "hp": 61,
+    "stage": 2
   },
   {
-    "Index": 34,
-    "Name": "Nidoking",
-    "Type": "Poison",
-    "HP": 81,
-    "Stage": 3
+    "index": 34,
+    "name": "nidoking",
+    "type": "poison",
+    "hp": 81,
+    "stage": 3
   },
   {
-    "Index": 35,
-    "Name": "Clefairy",
-    "Type": "Fairy",
-    "HP": 70,
-    "Stage": 1
+    "index": 35,
+    "name": "clefairy",
+    "type": "fairy",
+    "hp": 70,
+    "stage": 1
   },
   {
-    "Index": 36,
-    "Name": "Clefable",
-    "Type": "Fairy",
-    "HP": 95,
-    "Stage": 2
+    "index": 36,
+    "name": "clefable",
+    "type": "fairy",
+    "hp": 95,
+    "stage": 2
   },
   {
-    "Index": 37,
-    "Name": "Vulpix",
-    "Type": "Fire",
-    "HP": 38,
-    "Stage": 1
+    "index": 37,
+    "name": "vulpix",
+    "type": "fire",
+    "hp": 38,
+    "stage": 1
   },
   {
-    "Index": 38,
-    "Name": "Ninetales",
-    "Type": "Fire",
-    "HP": 73,
-    "Stage": 2
+    "index": 38,
+    "name": "ninetales",
+    "type": "fire",
+    "hp": 73,
+    "stage": 2
   },
   {
-    "Index": 39,
-    "Name": "Jigglypuff",
-    "Type": "Normal",
-    "HP": 115,
-    "Stage": 1
+    "index": 39,
+    "name": "jigglypuff",
+    "type": "normal",
+    "hp": 115,
+    "stage": 1
   },
   {
-    "Index": 40,
-    "Name": "Wigglytuff",
-    "Type": "Normal",
-    "HP": 140,
-    "Stage": 2
+    "index": 40,
+    "name": "wigglytuff",
+    "type": "normal",
+    "hp": 140,
+    "stage": 2
   },
   {
-    "Index": 41,
-    "Name": "Zubat",
-    "Type": "Poison",
-    "HP": 40,
-    "Stage": 1
+    "index": 41,
+    "name": "zubat",
+    "type": "poison",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 42,
-    "Name": "Golbat",
-    "Type": "Poison",
-    "HP": 75,
-    "Stage": 2
+    "index": 42,
+    "name": "golbat",
+    "type": "poison",
+    "hp": 75,
+    "stage": 2
   },
   {
-    "Index": 43,
-    "Name": "Oddish",
-    "Type": "Grass",
-    "HP": 45,
-    "Stage": 1
+    "index": 43,
+    "name": "oddish",
+    "type": "grass",
+    "hp": 45,
+    "stage": 1
   },
   {
-    "Index": 44,
-    "Name": "Gloom",
-    "Type": "Grass",
-    "HP": 60,
-    "Stage": 2
+    "index": 44,
+    "name": "gloom",
+    "type": "grass",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 45,
-    "Name": "Vileplume",
-    "Type": "Grass",
-    "HP": 75,
-    "Stage": 3
+    "index": 45,
+    "name": "vileplume",
+    "type": "grass",
+    "hp": 75,
+    "stage": 3
   },
   {
-    "Index": 46,
-    "Name": "Paras",
-    "Type": "Bug",
-    "HP": 35,
-    "Stage": 1
+    "index": 46,
+    "name": "paras",
+    "type": "bug",
+    "hp": 35,
+    "stage": 1
   },
   {
-    "Index": 47,
-    "Name": "Parasect",
-    "Type": "Bug",
-    "HP": 60,
-    "Stage": 2
+    "index": 47,
+    "name": "parasect",
+    "type": "bug",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 48,
-    "Name": "Venonat",
-    "Type": "Bug",
-    "HP": 60,
-    "Stage": 1
+    "index": 48,
+    "name": "venonat",
+    "type": "bug",
+    "hp": 60,
+    "stage": 1
   },
   {
-    "Index": 49,
-    "Name": "Venomoth",
-    "Type": "Bug",
-    "HP": 70,
-    "Stage": 2
+    "index": 49,
+    "name": "venomoth",
+    "type": "bug",
+    "hp": 70,
+    "stage": 2
   },
   {
-    "Index": 50,
-    "Name": "Diglett",
-    "Type": "Ground",
-    "HP": 10,
-    "Stage": 1
+    "index": 50,
+    "name": "diglett",
+    "type": "ground",
+    "hp": 10,
+    "stage": 1
   },
   {
-    "Index": 51,
-    "Name": "Dugtrio",
-    "Type": "Ground",
-    "HP": 35,
-    "Stage": 2
+    "index": 51,
+    "name": "dugtrio",
+    "type": "ground",
+    "hp": 35,
+    "stage": 2
   },
   {
-    "Index": 52,
-    "Name": "Meowth",
-    "Type": "Normal",
-    "HP": 40,
-    "Stage": 1
+    "index": 52,
+    "name": "meowth",
+    "type": "normal",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 53,
-    "Name": "Persian",
-    "Type": "Normal",
-    "HP": 65,
-    "Stage": 2
+    "index": 53,
+    "name": "persian",
+    "type": "normal",
+    "hp": 65,
+    "stage": 2
   },
   {
-    "Index": 54,
-    "Name": "Psyduck",
-    "Type": "Water",
-    "HP": 50,
-    "Stage": 1
+    "index": 54,
+    "name": "psyduck",
+    "type": "water",
+    "hp": 50,
+    "stage": 1
   },
   {
-    "Index": 55,
-    "Name": "Golduck",
-    "Type": "Water",
-    "HP": 80,
-    "Stage": 2
+    "index": 55,
+    "name": "golduck",
+    "type": "water",
+    "hp": 80,
+    "stage": 2
   },
   {
-    "Index": 56,
-    "Name": "Mankey",
-    "Type": "Fighting",
-    "HP": 40,
-    "Stage": 1
+    "index": 56,
+    "name": "mankey",
+    "type": "fighting",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 57,
-    "Name": "Primeape",
-    "Type": "Fighting",
-    "HP": 65,
-    "Stage": 2
+    "index": 57,
+    "name": "primeape",
+    "type": "fighting",
+    "hp": 65,
+    "stage": 2
   },
   {
-    "Index": 58,
-    "Name": "Growlithe",
-    "Type": "Fire",
-    "HP": 55,
-    "Stage": 1
+    "index": 58,
+    "name": "growlithe",
+    "type": "fire",
+    "hp": 55,
+    "stage": 1
   },
   {
-    "Index": 59,
-    "Name": "Arcanine",
-    "Type": "Fire",
-    "HP": 90,
-    "Stage": 2
+    "index": 59,
+    "name": "arcanine",
+    "type": "fire",
+    "hp": 90,
+    "stage": 2
   },
   {
-    "Index": 60,
-    "Name": "Poliwag",
-    "Type": "Water",
-    "HP": 40,
-    "Stage": 1
+    "index": 60,
+    "name": "poliwag",
+    "type": "water",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 61,
-    "Name": "Poliwhirl",
-    "Type": "Water",
-    "HP": 65,
-    "Stage": 2
+    "index": 61,
+    "name": "poliwhirl",
+    "type": "water",
+    "hp": 65,
+    "stage": 2
   },
   {
-    "Index": 62,
-    "Name": "Poliwrath",
-    "Type": "Water",
-    "HP": 90,
-    "Stage": 3
+    "index": 62,
+    "name": "poliwrath",
+    "type": "water",
+    "hp": 90,
+    "stage": 3
   },
   {
-    "Index": 63,
-    "Name": "Abra",
-    "Type": "Psychic",
-    "HP": 25,
-    "Stage": 1
+    "index": 63,
+    "name": "abra",
+    "type": "psychic",
+    "hp": 25,
+    "stage": 1
   },
   {
-    "Index": 64,
-    "Name": "Kadabra",
-    "Type": "Psychic",
-    "HP": 40,
-    "Stage": 2
+    "index": 64,
+    "name": "kadabra",
+    "type": "psychic",
+    "hp": 40,
+    "stage": 2
   },
   {
-    "Index": 65,
-    "Name": "Alakazam",
-    "Type": "Psychic",
-    "HP": 55,
-    "Stage": 3
+    "index": 65,
+    "name": "alakazam",
+    "type": "psychic",
+    "hp": 55,
+    "stage": 3
   },
   {
-    "Index": 66,
-    "Name": "Machop",
-    "Type": "Fighting",
-    "HP": 70,
-    "Stage": 1
+    "index": 66,
+    "name": "machop",
+    "type": "fighting",
+    "hp": 70,
+    "stage": 1
   },
   {
-    "Index": 67,
-    "Name": "Machoke",
-    "Type": "Fighting",
-    "HP": 80,
-    "Stage": 2
+    "index": 67,
+    "name": "machoke",
+    "type": "fighting",
+    "hp": 80,
+    "stage": 2
   },
   {
-    "Index": 68,
-    "Name": "Machamp",
-    "Type": "Fighting",
-    "HP": 90,
-    "Stage": 3
+    "index": 68,
+    "name": "machamp",
+    "type": "fighting",
+    "hp": 90,
+    "stage": 3
   },
   {
-    "Index": 69,
-    "Name": "Bellsprout",
-    "Type": "Grass",
-    "HP": 50,
-    "Stage": 1
+    "index": 69,
+    "name": "bellsprout",
+    "type": "grass",
+    "hp": 50,
+    "stage": 1
   },
   {
-    "Index": 70,
-    "Name": "Weepinbell",
-    "Type": "Grass",
-    "HP": 65,
-    "Stage": 2
+    "index": 70,
+    "name": "weepinbell",
+    "type": "grass",
+    "hp": 65,
+    "stage": 2
   },
   {
-    "Index": 71,
-    "Name": "Victreebel",
-    "Type": "Grass",
-    "HP": 80,
-    "Stage": 3
+    "index": 71,
+    "name": "victreebel",
+    "type": "grass",
+    "hp": 80,
+    "stage": 3
   },
   {
-    "Index": 72,
-    "Name": "Tentacool",
-    "Type": "Water",
-    "HP": 40,
-    "Stage": 1
+    "index": 72,
+    "name": "tentacool",
+    "type": "water",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 73,
-    "Name": "Tentacruel",
-    "Type": "Water",
-    "HP": 80,
-    "Stage": 2
+    "index": 73,
+    "name": "tentacruel",
+    "type": "water",
+    "hp": 80,
+    "stage": 2
   },
   {
-    "Index": 74,
-    "Name": "Geodude",
-    "Type": "Rock",
-    "HP": 40,
-    "Stage": 1
+    "index": 74,
+    "name": "geodude",
+    "type": "rock",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 75,
-    "Name": "Graveler",
-    "Type": "Rock",
-    "HP": 55,
-    "Stage": 2
+    "index": 75,
+    "name": "graveler",
+    "type": "rock",
+    "hp": 55,
+    "stage": 2
   },
   {
-    "Index": 76,
-    "Name": "Golem",
-    "Type": "Rock",
-    "HP": 80,
-    "Stage": 3
+    "index": 76,
+    "name": "golem",
+    "type": "rock",
+    "hp": 80,
+    "stage": 3
   },
   {
-    "Index": 77,
-    "Name": "Ponyta",
-    "Type": "Fire",
-    "HP": 50,
-    "Stage": 1
+    "index": 77,
+    "name": "ponyta",
+    "type": "fire",
+    "hp": 50,
+    "stage": 1
   },
   {
-    "Index": 78,
-    "Name": "Rapidash",
-    "Type": "Fire",
-    "HP": 65,
-    "Stage": 2
+    "index": 78,
+    "name": "rapidash",
+    "type": "fire",
+    "hp": 65,
+    "stage": 2
   },
   {
-    "Index": 79,
-    "Name": "Slowpoke",
-    "Type": "Water",
-    "HP": 90,
-    "Stage": 1
+    "index": 79,
+    "name": "slowpoke",
+    "type": "water",
+    "hp": 90,
+    "stage": 1
   },
   {
-    "Index": 80,
-    "Name": "Slowbro",
-    "Type": "Water",
-    "HP": 95,
-    "Stage": 2
+    "index": 80,
+    "name": "slowbro",
+    "type": "water",
+    "hp": 95,
+    "stage": 2
   },
   {
-    "Index": 81,
-    "Name": "Magnemite",
-    "Type": "Electric",
-    "HP": 25,
-    "Stage": 1
+    "index": 81,
+    "name": "magnemite",
+    "type": "electric",
+    "hp": 25,
+    "stage": 1
   },
   {
-    "Index": 82,
-    "Name": "Magneton",
-    "Type": "Electric",
-    "HP": 50,
-    "Stage": 2
+    "index": 82,
+    "name": "magneton",
+    "type": "electric",
+    "hp": 50,
+    "stage": 2
   },
   {
-    "Index": 83,
-    "Name": "Farfetch'd",
-    "Type": "Normal",
-    "HP": 52
+    "index": 83,
+    "name": "farfetch'd",
+    "type": "normal",
+    "hp": 52
   },
   {
-    "Index": 84,
-    "Name": "Doduo",
-    "Type": "Normal",
-    "HP": 35,
-    "Stage": 1
+    "index": 84,
+    "name": "doduo",
+    "type": "normal",
+    "hp": 35,
+    "stage": 1
   },
   {
-    "Index": 85,
-    "Name": "Dodrio",
-    "Type": "Normal",
-    "HP": 60,
-    "Stage": 2
+    "index": 85,
+    "name": "dodrio",
+    "type": "normal",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 86,
-    "Name": "Seel",
-    "Type": "Water",
-    "HP": 65,
-    "Stage": 1
+    "index": 86,
+    "name": "seel",
+    "type": "water",
+    "hp": 65,
+    "stage": 1
   },
   {
-    "Index": 87,
-    "Name": "Dewgong",
-    "Type": "Water",
-    "HP": 90,
-    "Stage": 2
+    "index": 87,
+    "name": "dewgong",
+    "type": "water",
+    "hp": 90,
+    "stage": 2
   },
   {
-    "Index": 88,
-    "Name": "Grimer",
-    "Type": "Poison",
-    "HP": 80,
-    "Stage": 1
+    "index": 88,
+    "name": "grimer",
+    "type": "poison",
+    "hp": 80,
+    "stage": 1
   },
   {
-    "Index": 89,
-    "Name": "Muk",
-    "Type": "Poison",
-    "HP": 105,
-    "Stage": 2
+    "index": 89,
+    "name": "muk",
+    "type": "poison",
+    "hp": 105,
+    "stage": 2
   },
   {
-    "Index": 90,
-    "Name": "Shellder",
-    "Type": "Water",
-    "HP": 30,
-    "Stage": 1
+    "index": 90,
+    "name": "shellder",
+    "type": "water",
+    "hp": 30,
+    "stage": 1
   },
   {
-    "Index": 91,
-    "Name": "Cloyster",
-    "Type": "Water",
-    "HP": 50,
-    "Stage": 2
+    "index": 91,
+    "name": "cloyster",
+    "type": "water",
+    "hp": 50,
+    "stage": 2
   },
   {
-    "Index": 92,
-    "Name": "Gastly",
-    "Type": "Ghost",
-    "HP": 30,
-    "Stage": 1
+    "index": 92,
+    "name": "gastly",
+    "type": "ghost",
+    "hp": 30,
+    "stage": 1
   },
   {
-    "Index": 93,
-    "Name": "Haunter",
-    "Type": "Ghost",
-    "HP": 45,
-    "Stage": 2
+    "index": 93,
+    "name": "haunter",
+    "type": "ghost",
+    "hp": 45,
+    "stage": 2
   },
   {
-    "Index": 94,
-    "Name": "Gengar",
-    "Type": "Ghost",
-    "HP": 60,
-    "Stage": 3
+    "index": 94,
+    "name": "gengar",
+    "type": "ghost",
+    "hp": 60,
+    "stage": 3
   },
   {
-    "Index": 95,
-    "Name": "Onix",
-    "Type": "Rock",
-    "HP": 35
+    "index": 95,
+    "name": "onix",
+    "type": "rock",
+    "hp": 35
   },
   {
-    "Index": 96,
-    "Name": "Drowzee",
-    "Type": "Psychic",
-    "HP": 60,
-    "Stage": 1
+    "index": 96,
+    "name": "drowzee",
+    "type": "psychic",
+    "hp": 60,
+    "stage": 1
   },
   {
-    "Index": 97,
-    "Name": "Hypno",
-    "Type": "Psychic",
-    "HP": 85,
-    "Stage": 2
+    "index": 97,
+    "name": "hypno",
+    "type": "psychic",
+    "hp": 85,
+    "stage": 2
   },
   {
-    "Index": 98,
-    "Name": "Krabby",
-    "Type": "Water",
-    "HP": 30,
-    "Stage": 1
+    "index": 98,
+    "name": "krabby",
+    "type": "water",
+    "hp": 30,
+    "stage": 1
   },
   {
-    "Index": 99,
-    "Name": "Kingler",
-    "Type": "Water",
-    "HP": 55,
-    "Stage": 2
+    "index": 99,
+    "name": "kingler",
+    "type": "water",
+    "hp": 55,
+    "stage": 2
   },
   {
-    "Index": 100,
-    "Name": "Voltorb",
-    "Type": "Electric",
-    "HP": 40,
-    "Stage": 1
+    "index": 100,
+    "name": "voltorb",
+    "type": "electric",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 101,
-    "Name": "Electrode",
-    "Type": "Electric",
-    "HP": 60,
-    "Stage": 2
+    "index": 101,
+    "name": "electrode",
+    "type": "electric",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 102,
-    "Name": "Exeggcute",
-    "Type": "Grass",
-    "HP": 60,
-    "Stage": 1
+    "index": 102,
+    "name": "exeggcute",
+    "type": "grass",
+    "hp": 60,
+    "stage": 1
   },
   {
-    "Index": 103,
-    "Name": "Exeggutor",
-    "Type": "Grass",
-    "HP": 95,
-    "Stage": 2
+    "index": 103,
+    "name": "exeggutor",
+    "type": "grass",
+    "hp": 95,
+    "stage": 2
   },
   {
-    "Index": 104,
-    "Name": "Cubone",
-    "Type": "Ground",
-    "HP": 50,
-    "Stage": 1
+    "index": 104,
+    "name": "cubone",
+    "type": "ground",
+    "hp": 50,
+    "stage": 1
   },
   {
-    "Index": 105,
-    "Name": "Marowak",
-    "Type": "Ground",
-    "HP": 60,
-    "Stage": 2
+    "index": 105,
+    "name": "marowak",
+    "type": "ground",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 106,
-    "Name": "Hitmonlee",
-    "Type": "Fighting",
-    "HP": 50
+    "index": 106,
+    "name": "hitmonlee",
+    "type": "fighting",
+    "hp": 50
   },
   {
-    "Index": 107,
-    "Name": "Hitmonchan",
-    "Type": "Fighting",
-    "HP": 50
+    "index": 107,
+    "name": "hitmonchan",
+    "type": "fighting",
+    "hp": 50
   },
   {
-    "Index": 108,
-    "Name": "Lickitung",
-    "Type": "Normal",
-    "HP": 90
+    "index": 108,
+    "name": "lickitung",
+    "type": "normal",
+    "hp": 90
   },
   {
-    "Index": 109,
-    "Name": "Koffing",
-    "Type": "Poison",
-    "HP": 40,
-    "Stage": 1
+    "index": 109,
+    "name": "koffing",
+    "type": "poison",
+    "hp": 40,
+    "stage": 1
   },
   {
-    "Index": 110,
-    "Name": "Weezing",
-    "Type": "Poison",
-    "HP": 65,
-    "Stage": 2
+    "index": 110,
+    "name": "weezing",
+    "type": "poison",
+    "hp": 65,
+    "stage": 2
   },
   {
-    "Index": 111,
-    "Name": "Rhyhorn",
-    "Type": "Ground",
-    "HP": 80,
-    "Stage": 1
+    "index": 111,
+    "name": "rhyhorn",
+    "type": "ground",
+    "hp": 80,
+    "stage": 1
   },
   {
-    "Index": 112,
-    "Name": "Rhydon",
-    "Type": "Ground",
-    "HP": 105,
-    "Stage": 2
+    "index": 112,
+    "name": "rhydon",
+    "type": "ground",
+    "hp": 105,
+    "stage": 2
   },
   {
-    "Index": 113,
-    "Name": "Chansey",
-    "Type": "Normal",
-    "HP": 250
+    "index": 113,
+    "name": "chansey",
+    "type": "normal",
+    "hp": 250
   },
   {
-    "Index": 114,
-    "Name": "Tangela",
-    "Type": "Grass",
-    "HP": 65
+    "index": 114,
+    "name": "tangela",
+    "type": "grass",
+    "hp": 65
   },
   {
-    "Index": 115,
-    "Name": "Kangaskhan",
-    "Type": "Normal",
-    "HP": 105
+    "index": 115,
+    "name": "kangaskhan",
+    "type": "normal",
+    "hp": 105
   },
   {
-    "Index": 116,
-    "Name": "Horsea",
-    "Type": "Water",
-    "HP": 30,
-    "Stage": 1
+    "index": 116,
+    "name": "horsea",
+    "type": "water",
+    "hp": 30,
+    "stage": 1
   },
   {
-    "Index": 117,
-    "Name": "Seadra",
-    "Type": "Water",
-    "HP": 55,
-    "Stage": 2
+    "index": 117,
+    "name": "seadra",
+    "type": "water",
+    "hp": 55,
+    "stage": 2
   },
   {
-    "Index": 118,
-    "Name": "Goldeen",
-    "Type": "Water",
-    "HP": 45,
-    "Stage": 1
+    "index": 118,
+    "name": "goldeen",
+    "type": "water",
+    "hp": 45,
+    "stage": 1
   },
   {
-    "Index": 119,
-    "Name": "Seaking",
-    "Type": "Water",
-    "HP": 80,
-    "Stage": 2
+    "index": 119,
+    "name": "seaking",
+    "type": "water",
+    "hp": 80,
+    "stage": 2
   },
   {
-    "Index": 120,
-    "Name": "Staryu",
-    "Type": "Water",
-    "HP": 30,
-    "Stage": 1
+    "index": 120,
+    "name": "staryu",
+    "type": "water",
+    "hp": 30,
+    "stage": 1
   },
   {
-    "Index": 121,
-    "Name": "Starmie",
-    "Type": "Water",
-    "HP": 60,
-    "Stage": 2
+    "index": 121,
+    "name": "starmie",
+    "type": "water",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 122,
-    "Name": "Mr.Mime",
-    "Type": "Psychic",
-    "HP": 40
+    "index": 122,
+    "name": "mr.mime",
+    "type": "psychic",
+    "hp": 40
   },
   {
-    "Index": 123,
-    "Name": "Scyther",
-    "Type": "Bug",
-    "HP": 70
+    "index": 123,
+    "name": "scyther",
+    "type": "bug",
+    "hp": 70
   },
   {
-    "Index": 124,
-    "Name": "Jynx",
-    "Type": "Ice",
-    "HP": 65
+    "index": 124,
+    "name": "jynx",
+    "type": "ice",
+    "hp": 65
   },
   {
-    "Index": 125,
-    "Name": "Electabuzz",
-    "Type": "Electric",
-    "HP": 65
+    "index": 125,
+    "name": "electabuzz",
+    "type": "electric",
+    "hp": 65
   },
   {
-    "Index": 126,
-    "Name": "Magmar",
-    "Type": "Fire",
-    "HP": 65
+    "index": 126,
+    "name": "magmar",
+    "type": "fire",
+    "hp": 65
   },
   {
-    "Index": 127,
-    "Name": "Pinsir",
-    "Type": "Bug",
-    "HP": 65
+    "index": 127,
+    "name": "pinsir",
+    "type": "bug",
+    "hp": 65
   },
   {
-    "Index": 128,
-    "Name": "Tauros",
-    "Type": "Normal",
-    "HP": 75
+    "index": 128,
+    "name": "tauros",
+    "type": "normal",
+    "hp": 75
   },
   {
-    "Index": 129,
-    "Name": "Magikarp",
-    "Type": "Water",
-    "HP": 20,
-    "Stage": 1
+    "index": 129,
+    "name": "magikarp",
+    "type": "water",
+    "hp": 20,
+    "stage": 1
   },
   {
-    "Index": 130,
-    "Name": "Gyarados",
-    "Type": "Water",
-    "HP": 95,
-    "Stage": 2
+    "index": 130,
+    "name": "gyarados",
+    "type": "water",
+    "hp": 95,
+    "stage": 2
   },
   {
-    "Index": 131,
-    "Name": "Lapras",
-    "Type": "Water",
-    "HP": 130
+    "index": 131,
+    "name": "lapras",
+    "type": "water",
+    "hp": 130
   },
   {
-    "Index": 132,
-    "Name": "Ditto",
-    "Type": "Normal",
-    "HP": 48
+    "index": 132,
+    "name": "ditto",
+    "type": "normal",
+    "hp": 48
   },
   {
-    "Index": 133,
-    "Name": "Eevee",
-    "Type": "Normal",
-    "HP": 55,
-    "Stage": 1
+    "index": 133,
+    "name": "eevee",
+    "type": "normal",
+    "hp": 55,
+    "stage": 1
   },
   {
-    "Index": 134,
-    "Name": "Vaporeon",
-    "Type": "Water",
-    "HP": 130,
-    "Stage": 2
+    "index": 134,
+    "name": "vaporeon",
+    "type": "water",
+    "hp": 130,
+    "stage": 2
   },
   {
-    "Index": 135,
-    "Name": "Jolteon",
-    "Type": "Electric",
-    "HP": 65,
-    "Stage": 2
+    "index": 135,
+    "name": "jolteon",
+    "type": "electric",
+    "hp": 65,
+    "stage": 2
   },
   {
-    "Index": 136,
-    "Name": "Flareon",
-    "Type": "Fire",
-    "HP": 65,
-    "Stage": 2
+    "index": 136,
+    "name": "flareon",
+    "type": "fire",
+    "hp": 65,
+    "stage": 2
   },
   {
-    "Index": 137,
-    "Name": "Porygon",
-    "Type": "Normal",
-    "HP": 65
+    "index": 137,
+    "name": "porygon",
+    "type": "normal",
+    "hp": 65
   },
   {
-    "Index": 138,
-    "Name": "Omanyte",
-    "Type": "Rock",
-    "HP": 35,
-    "Stage": 1
+    "index": 138,
+    "name": "omanyte",
+    "type": "rock",
+    "hp": 35,
+    "stage": 1
   },
   {
-    "Index": 139,
-    "Name": "Omastar",
-    "Type": "Rock",
-    "HP": 70,
-    "Stage": 2
+    "index": 139,
+    "name": "omastar",
+    "type": "rock",
+    "hp": 70,
+    "stage": 2
   },
   {
-    "Index": 140,
-    "Name": "Kabuto",
-    "Type": "Rock",
-    "HP": 30,
-    "Stage": 1
+    "index": 140,
+    "name": "kabuto",
+    "type": "rock",
+    "hp": 30,
+    "stage": 1
   },
   {
-    "Index": 141,
-    "Name": "Kabutops",
-    "Type": "Rock",
-    "HP": 60,
-    "Stage": 2
+    "index": 141,
+    "name": "kabutops",
+    "type": "rock",
+    "hp": 60,
+    "stage": 2
   },
   {
-    "Index": 142,
-    "Name": "Aerodactyl",
-    "Type": "Rock",
-    "HP": 80
+    "index": 142,
+    "name": "aerodactyl",
+    "type": "rock",
+    "hp": 80
   },
   {
-    "Index": 143,
-    "Name": "Snorlax",
-    "Type": "Normal",
-    "HP": 160
+    "index": 143,
+    "name": "snorlax",
+    "type": "normal",
+    "hp": 160
   },
   {
-    "Index": 144,
-    "Name": "Articuno",
-    "Type": "Ice",
-    "HP": 90
+    "index": 144,
+    "name": "articuno",
+    "type": "ice",
+    "hp": 90
   },
   {
-    "Index": 145,
-    "Name": "Zapdos",
-    "Type": "Electric",
-    "HP": 90
+    "index": 145,
+    "name": "zapdos",
+    "type": "electric",
+    "hp": 90
   },
   {
-    "Index": 146,
-    "Name": "Moltres",
-    "Type": "Fire",
-    "HP": 90
+    "index": 146,
+    "name": "moltres",
+    "type": "fire",
+    "hp": 90
   },
   {
-    "Index": 147,
-    "Name": "Dratini",
-    "Type": "Dragon",
-    "HP": 41,
-    "Stage": 1
+    "index": 147,
+    "name": "dratini",
+    "type": "dragon",
+    "hp": 41,
+    "stage": 1
   },
   {
-    "Index": 148,
-    "Name": "Dragonair",
-    "Type": "Dragon",
-    "HP": 61,
-    "Stage": 2
+    "index": 148,
+    "name": "dragonair",
+    "type": "dragon",
+    "hp": 61,
+    "stage": 2
   },
   {
-    "Index": 149,
-    "Name": "Dragonite",
-    "Type": "Dragon",
-    "HP": 91,
-    "Stage": 3
+    "index": 149,
+    "name": "dragonite",
+    "type": "dragon",
+    "hp": 91,
+    "stage": 3
   },
   {
-    "Index": 150,
-    "Name": "Mewtwo",
-    "Type": "Psychic",
-    "HP": 106
+    "index": 150,
+    "name": "mewtwo",
+    "type": "psychic",
+    "hp": 106
   },
   {
-    "Index": 151,
-    "Name": "Mew",
-    "Type": "Psychic",
-    "HP": 100
+    "index": 151,
+    "name": "mew",
+    "type": "psychic",
+    "hp": 100
   }
 ]
