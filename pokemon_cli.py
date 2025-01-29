@@ -1,4 +1,12 @@
-# from pokemon_admin import db
+from google.cloud.firestore_v1.base_query import FieldFilter
+from firebase_admin import credentials, firestore
+import firebase_admin
+
+cred = credentials.Certificate(r"path to json")
+firebase_admin.initialize_app(cred)
+
+# Firestore client
+db = firestore.client()
 
 KEYS = ['index', 'hp', 'stage', 'name', 'type', 'quit', 'help']
 OPS = ['of', '==', '!=', '<=', '>=', '<', '>']
@@ -7,16 +15,18 @@ TYPES = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poi
 
 def query_firebase(query):
     collection = db.collection('pokemon')
-    firebase_query = collection
 
     for subquery in query:
         # check if subquery is of format [key, operator, value], if it is not in this format then it is invalid
         if len(subquery) == 3:
             key, op, value = subquery
             if key in KEYS and op in OPS:
-                firebase_query = firebase_query.where(key, op, value)
+                query_ref = collection.where(filter=FieldFilter(key, op, value))
+                docs = query_ref.get()
+                for doc in docs:
+                    print(doc.to_dict())
     
-    result = firebase_query.get()
+    result = docs
     
 def take_input():
     while True:
