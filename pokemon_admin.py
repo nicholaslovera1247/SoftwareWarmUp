@@ -8,6 +8,12 @@ firebase_admin.initialize_app(cred)
 # Firestore client
 db = firestore.client()
 
+# Delete existing collection
+collection_ref = db.collection("pokemon")
+docs = collection_ref.stream()
+for doc in docs:
+    doc.reference.delete()
+
 # read json file
 with open("pokemon.json", "r") as file:
     json_data = json.load(file)
