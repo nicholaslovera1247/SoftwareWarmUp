@@ -2,7 +2,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 import json
 
-cred = credentials.Certificate(r"C:\Users\benth\OneDrive\Desktop\pokemon-authentication\pokemon-b8c62-firebase-adminsdk-fbsvc-9fe3b49643.json")
+cred = credentials.Certificate(r"path to json")
 firebase_admin.initialize_app(cred)
 
 # Firestore client
@@ -21,4 +21,3 @@ try:
             print(f"Document {document_id} written to {collection_name}.")
 except Exception as e:
     print(f"An error occurred: {e}")
-
