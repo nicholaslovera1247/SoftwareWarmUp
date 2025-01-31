@@ -52,10 +52,7 @@ def take_input():
                 query.append(word)
         query.append(subquery)
 
-        valid_query = validate_input(query)      
-
-        if valid_query:
-            query_firebase(query)
+        valid_query = validate_input(query)
 
         print(query, valid_query)
 
