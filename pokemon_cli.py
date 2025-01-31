@@ -2,7 +2,7 @@ from google.cloud.firestore_v1.base_query import FieldFilter
 from firebase_admin import credentials, firestore
 import firebase_admin
 
-cred = credentials.Certificate(r"path to json")
+cred = credentials.Certificate(r"../pokemon_db_certs.json")
 firebase_admin.initialize_app(cred)
 
 # Firestore client
@@ -37,6 +37,9 @@ def take_input():
 
         if input_str[0] == 'quit':
             break
+        
+        if input_str == ['']:
+            input_str = []
 
         query = []
         subquery = []
@@ -46,10 +49,13 @@ def take_input():
             else:
                 query.append(subquery)
                 subquery = []
-                query.append([word])
+                query.append(word)
         query.append(subquery)
 
         valid_query = validate_input(query)      
+
+        if valid_query:
+            query_firebase(query)
 
         print(query, valid_query)
 
@@ -57,45 +63,52 @@ def validate_input(query):
     valid_query = True
 
     for subquery in query:
-        if len(subquery) == 3:
-            key, op, val = subquery
+        if subquery in ['and', 'or']:
+            continue
+        # checks that each subquery has the correct length
+        elif len(subquery) != 3:
+            valid_query = False
+            print(f'Expected 3 arguments ([keyword] [operator] [value]), found {len(subquery)} ({" ".join(map(str, subquery))})')
+            continue
 
-            # checks that the given key value is a valid keyword
-            if key not in KEYS:
+        key, op, val = subquery
+
+        # checks that the given key value is a valid keyword
+        if key not in KEYS:
+            valid_query = False
+            print(f'Keyword \'{key}\' not recognized')
+        
+        # checks that index, hp, and stage all get ints
+        if key in KEYS[:3] and op != OPS[0]: 
+            try:
+                subquery[2] = int(val)
+            except:
                 valid_query = False
-                print(f'Keyword \'{key}\' not recognized')
-            
-            # checks that index, hp, and stage all get ints
-            elif key in KEYS[:3] and op != OPS[0]: 
-                try:
-                    subquery[2] = int(val)
-                except:
-                    valid_query = False
-                    print(f'Keyword \'{key}\' requires an int, found \'{val}\'')
+                print(f'Keyword \'{key}\' requires an int, found \'{val}\'')
 
-            # checks that name and type are only used with 'of' or '=='
-            elif key in KEYS[3:5] and op != OPS[0]: 
-                if op not in OPS[:2]:
-                    valid_query = False
-                    print(f'Keyword \'{key}\' requires either \'of\' or \'==\' operators, found \'{op}\'')
-
-            # checks that type is always passed a valid type
-            elif key == KEYS[4] and op != OPS[0]:
-                if val not in TYPES:
-                    valid_query = False
-                    print(f'Keyword \'{key}\' requires a valid type (see \'help\'), found \'{val}\'')
-
-            # checks that the given op value is a valid operator
-            if op not in OPS:
+        # checks that name and type are only used with 'of' or '=='
+        if key in KEYS[3:5] and op != OPS[0]: 
+            if op not in OPS[:2]:
                 valid_query = False
-                print(f'Operator \'{op}\' not recognized')
-    
-            # if the 'of' operator is passed, converts val to an int if it is numeric
-            elif op == OPS[0]:
-                try:
-                    subquery[2] = int(val)
-                except:
-                    subquery[2] = val
+                print(f'Keyword \'{key}\' requires either \'of\' or \'==\' operators, found \'{op}\'')
+
+        # checks that type is always passed a valid type
+        if key == KEYS[4] and op != OPS[0]:
+            if val not in TYPES:
+                valid_query = False
+                print(f'Keyword \'{key}\' requires a valid type (see \'help\'), found \'{val}\'')
+
+        # checks that the given op value is a valid operator
+        if op not in OPS:
+            valid_query = False
+            print(f'Operator \'{op}\' not recognized')
+
+        # if the 'of' operator is passed, converts val to an int if it is numeric
+        if op == OPS[0]:
+            try:
+                subquery[2] = int(val)
+            except:
+                subquery[2] = val
 
     return valid_query
 
