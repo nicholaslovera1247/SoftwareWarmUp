@@ -109,5 +109,30 @@ def validate_input(query):
 
     return valid_query
 
+def merge_and(list1,list2):
+    # Compare unique IDs of each document in the Google firestore
+    set1 = {doc.id for doc in list1}
+    set2 = {doc.id for doc in list2}
+    # Using pythons intersection method, get the common documents in both lists
+    common_ids = set1.intersection(set2)
+    # Iterate through list 1 (or 2), if the doc.id in this list is in common_ids, add it to our list of
+    # common documents from both list
+    rtnlist = []
+    for doc in list1:
+        if doc.id in common_ids:
+            rtnlist.append(doc)
+    return rtnlist
+
+def merge_or(list1,list2):
+    # Create a set to avoid duplicates
+    seen = set()
+    # Create a list that merges list 1 and list 2
+    merged = []
+    # Iterate through list 1 and list 2, if the doc is not already in seen, append it to our merged list
+    for doc in list1 + list2:
+        if doc.id not in seen:
+            seen.add(doc.id)
+            merged.append(doc)
+    return merged
 take_input()
 print("Goodbye!")
