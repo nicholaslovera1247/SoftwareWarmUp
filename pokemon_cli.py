@@ -4,7 +4,7 @@ import firebase_admin
 from PokemonClass import Pokemon
 
 
-cred = credentials.Certificate(r"../pokemon_db_certs.json")
+cred = credentials.Certificate(r"./pokemon_db_certs.json")
 firebase_admin.initialize_app(cred)
 
 # Firestore client
