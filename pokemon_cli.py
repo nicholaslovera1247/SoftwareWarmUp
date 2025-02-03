@@ -1,6 +1,8 @@
 from google.cloud.firestore_v1.base_query import FieldFilter
 from firebase_admin import credentials, firestore
 import firebase_admin
+from PokemonClass import Pokemon
+
 
 cred = credentials.Certificate(r"../pokemon_db_certs.json")
 firebase_admin.initialize_app(cred)
@@ -16,17 +18,35 @@ TYPES = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poi
 def query_firebase(query):
     collection = db.collection('pokemon')
 
+    all_pokemon = []
+    merge_type = ''
+
     for subquery in query:
         # check if subquery is of format [key, operator, value], if it is not in this format then it is invalid
-        if len(subquery) == 3:
+        if subquery in ['and', 'or']:
+            merge_type = subquery
+        else:
+            new_pokemon = []
+
             key, op, value = subquery
-            if key in KEYS and op in OPS:
-                query_ref = collection.where(filter=FieldFilter(key, op, value))
-                docs = query_ref.get()
-                for doc in docs:
-                    print(doc.to_dict())
+            query_ref = collection.where(filter=FieldFilter(key, op, value))
+            docs = query_ref.get()
+            for doc in docs:
+                new_pokemon.append(Pokemon.from_dict(doc.to_dict()))
+
+            if all_pokemon == []:
+                all_pokemon = new_pokemon
+
+            if merge_type == 'and':
+                all_pokemon = merge_and(all_pokemon, new_pokemon)
+            if merge_type == 'or':
+                all_pokemon = merge_or(all_pokemon, new_pokemon)
+
+            merge_type == ''
     
     result = docs
+
+    return all_pokemon
     
 def take_input():
     while True:
@@ -54,7 +74,13 @@ def take_input():
 
         valid_query = validate_input(query)
 
-        print(query, valid_query)
+        if valid_query:
+            query_output = query_firebase(query)
+
+            for pokemon in query_output:
+                print(pokemon)
+
+        print()
 
 def validate_input(query):
     valid_query = True
