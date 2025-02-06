@@ -37,7 +37,10 @@ def take_input():
 
         if input_str[0] == 'quit':
             break
-        
+
+        if input_str[0] == 'help':
+            help()
+
         if input_str == ['']:
             input_str = []
 
@@ -134,5 +137,29 @@ def merge_or(list1,list2):
             seen.add(doc.id)
             merged.append(doc)
     return merged
+
+def help():
+    print("Keywords: Index, name, type, HP, stage, help, quit \n"
+          "Operators: ==, !=, <=, >=, <, >, <, >, and, of\n"
+          "--------------------------------------------------\n"
+          "Index (int):  ==, !=, <=, >=, <, >, of\n"
+          "Name (str): ==, of\n"
+          "Type (str): ==, !=, of (normal, fire, water, electric, grass, ice, fighting, \n"
+          "poison, ground, flying, psychic, bug, rock, ghost, dragon, dark, steel, fairy)\n"
+          "HP (int): ==, !=, <=, >=, <, >, of\n"
+          "Stage (int): ==, !=, <=, >=, <, >, of (1, 2, 3)\n"
+          "quit: Close program\n"
+          "help: List commands\n"
+          "--------------------------------------------------\n"
+          "“Of” operator: [keyword] of [index/name]:\n"
+          "Returns the specified column of the given pokemon\n"
+          "Must use either the name or index of a pokemon to get a result\n"
+          "--------------------------------------------------\n"
+          "Example queries:\n"
+          "> name == pikachu:\n"
+          "> type == dragon\n"
+          "> type == grass or type == fire\n"
+          "> index <= 1 and HP > 100\n"
+          "> name of 4")
 take_input()
 print("Goodbye!")
