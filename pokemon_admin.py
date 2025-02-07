@@ -1,29 +1,21 @@
-import firebase_admin
-from firebase_admin import credentials, firestore
+from pokemon_firebase import delete_collection, add_document, authentication
 import json
 
-cred = credentials.Certificate(r"path to json")
-firebase_admin.initialize_app(cred)
-
-# Firestore client
-db = firestore.client()
+# authentication
+auth = authentication()
 
 # Delete existing collection
-collection_ref = db.collection("pokemon")
-docs = collection_ref.stream()
-for doc in docs:
-    doc.reference.delete()
+delete_collection(auth)
 
-# read json file
-with open("pokemon.json", "r") as file:
-    json_data = json.load(file)
+# Read json file
+json_file = "pokemon.json"
+with open(json_file, "r") as file:
+        json_data = json.load(file)
 
+# Add documents to Firebase
 try:
     if isinstance(json_data, list):
-        collection_name = "pokemon" 
         for document in json_data:
-            document_id = document.get("id", db.collection(collection_name).document().id)
-            db.collection(collection_name).document(document_id).set(document)
-            print(f"Document {document_id} written to {collection_name}.")
+            add_document(document, auth)
 except Exception as e:
-    print(f"An error occurred: {e}")
+        print(f"An error occurred: {e}")
