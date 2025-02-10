@@ -4,18 +4,18 @@ from PokemonClass import Pokemon
 import pyparsing as pp
 
 # Define terms for creating pyparsing queries
-int_keys = pp.one_of('index hp stage')
-int_ops = pp.one_of('of == != <= >= < >')
-str_ops = pp.one_of('of == !=')
-types = pp.one_of('normal fire water electric grass ice fighting poison ' + 
-                  'ground flying psychic bug rock ghost dragon dark fairy')
-logic = pp.one_of('and or')
+int_keys = pp.one_of('index hp stage') # Keywords that take ints
+int_ops = pp.one_of('of == != <= >= < >') # Operators used for keywords that take ints
+str_ops = pp.one_of('of == !=') # Operators used for keywords that take strs
+types = pp.one_of('normal fire water electric grass ice fighting poison \
+                  ground flying psychic bug rock ghost dragon dark fairy') # Allowed types to query for
+logic = pp.one_of('and or') # Allowed forms of logic to combine multiple queries
 
 # Define regex to parse over
 query_format = ((int_keys + int_ops + pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0]))) | 
                 ('name' + str_ops + pp.Word(pp.printables)) | 
-                ('type' + str_ops + types)).set_parse_action(lambda tokens: [tokens])
-complex_query_format = query_format + (logic + query_format)[0,]
+                ('type' + str_ops + types)).set_parse_action(lambda tokens: [tokens]) # Basic queries, no 'and' or 'or'
+complex_query_format = query_format + (logic + query_format)[0,] # Complex queries, allows for using 'and' or 'or' to add multiple forms of logic
 
 auth = authentication()
 
@@ -86,11 +86,10 @@ def take_input():
         input_str = input().lower().strip()
         print()
 
-        # Handle special cases for input that to not match regular query structure
+        # Handle special cases for input that do not match regular query structure
         if input_str == 'quit':
             break
-
-        if input_str == 'help':
+        elif input_str == 'help':
             help()
             continue
         
@@ -108,8 +107,6 @@ def take_input():
 
             for pokemon in query_output:
                 print(pokemon)
-
-        print()
 
 # def validate_input(query):
 #     valid_query = True
@@ -164,6 +161,8 @@ def take_input():
 
 #     return valid_query
 
+
+# Print overview of keywords and how to structure queries
 def help():
     print("Keywords: Index, name, type, HP, stage, help, quit \n"
           "Operators: ==, !=, <=, >=, <, >, <, >, and, of\n"
@@ -187,5 +186,6 @@ def help():
           "> type == grass or type == fire\n"
           "> index <= 1 and HP > 100\n"
           "> name of 4")
+
 take_input()
 print("Goodbye!")
