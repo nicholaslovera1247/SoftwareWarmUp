@@ -4,19 +4,26 @@ from PokemonClass import Pokemon
 import pyparsing as pp
 
 # Define terms for creating pyparsing queries
+all_keys = pp.one_of('name type index hp stage') # All keywords
 int_keys = pp.one_of('index hp stage') # Keywords that take ints
-int_ops = pp.one_of('of == != <= >= < >') # Operators used for keywords that take ints
-str_ops = pp.one_of('of == !=') # Operators used for keywords that take strs
+int_ops = pp.one_of('== != <= >= < >') # Operators used for keywords that take ints
+str_ops = pp.one_of('== !=') # Operators used for keywords that take strs
 types = pp.one_of('normal fire water electric grass ice fighting poison \
                   ground flying psychic bug rock ghost dragon dark fairy') # Allowed types to query for
 logic = pp.one_of('and or') # Allowed forms of logic to combine multiple queries
 
 # Define regex to parse over
-query_format = ((int_keys + int_ops + pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0]))) | 
-                ('name' + str_ops + pp.Word(pp.printables)) | 
-                ('type' + str_ops + types)).set_parse_action(lambda tokens: [tokens]) # Basic queries, no 'and' or 'or'
-complex_query_format = query_format + (logic + query_format)[0,] # Complex queries, allows for using 'and' or 'or' to add multiple forms of logic
+basic_query_format = (
+    (int_keys + int_ops + pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0]))) | # Handles queries with int arguments
+    ('name' + str_ops + pp.Word(pp.printables)) | # Handles 'name' queries
+    ('type' + str_ops + types) # Handles 'type' queries
+    ).set_parse_action(lambda tokens: [tokens]) # Nest queries into separate lists for easier parsing of complex queries
+of_query_format = (
+    (all_keys + 'of' + (pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0])) | pp.Word(pp.printables))) # Handles 'of' queries
+    ).set_parse_action(lambda tokens: [tokens])
 
+# Complex queries, allows for using 'and' or 'or' to add multiple forms of logic
+complex_query_format = (basic_query_format + (logic + basic_query_format)[0,]) | of_query_format 
 auth = authentication()
 
 def query_firebase(query):
@@ -98,15 +105,16 @@ def take_input():
             query = complex_query_format.parse_string(input_str, parse_all=True)
         except pp.ParseException as ex:
             print(ex)
-            print('Use \'help\' for more info')
             valid_query = False
-
+        
         # If query was properly parsed, send it to firebase and print the result
         if valid_query:
             query_output = query_firebase(query)
 
             for pokemon in query_output:
                 print(pokemon)
+        else:
+            print('Use \'help\' for more info')
 
 # def validate_input(query):
 #     valid_query = True
@@ -179,6 +187,7 @@ def help():
           "“Of” operator: [keyword] of [index/name]:\n"
           "Returns the specified column of the given pokemon\n"
           "Must use either the name or index of a pokemon to get a result\n"
+          "May not create compound queries with \'and\' of \'or\'"
           "--------------------------------------------------\n"
           "Example queries:\n"
           "> name == pikachu:\n"

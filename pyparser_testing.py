@@ -1,5 +1,6 @@
 import pyparsing as pp
 
+all_keys = pp.one_of('name type index hp stage')
 int_keys = pp.one_of('index hp stage')
 int_ops = pp.one_of('of == != <= >= < >')
 str_ops = pp.one_of('of == !=')
@@ -12,6 +13,10 @@ logic = pp.one_of('and or')
 query_format = ((int_keys + int_ops + pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0]))) | 
                 ('name' + str_ops + pp.Word(pp.printables)) | 
                 ('type' + str_ops + types)).set_parse_action(lambda tokens: [tokens])
+of_query_format = (
+    (all_keys + 'of' + (pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0])) | pp.Word(pp.printables)))
+    ).set_parse_action(lambda tokens: [tokens])
+
 complex_query_format = query_format + (logic + query_format)[0,]
 
 def take_input():
