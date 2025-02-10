@@ -2,7 +2,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 
 def authentication():
-    cred = credentials.Certificate(r"C:\Users\benth\OneDrive\Desktop\pokemon-authentication\pokemon-b8c62-firebase-adminsdk-fbsvc-9fe3b49643.json")
+    cred = credentials.Certificate(r"./pokemon_db_certs.json")
     firebase_admin.initialize_app(cred)
     db = firestore.client()
     return db

@@ -1,13 +1,23 @@
 from pokemon_firebase import authentication
 from google.cloud.firestore_v1.base_query import FieldFilter
 from PokemonClass import Pokemon
+import pyparsing as pp
+
+# Define terms for creating pyparsing queries
+int_keys = pp.one_of('index hp stage')
+int_ops = pp.one_of('of == != <= >= < >')
+str_ops = pp.one_of('of == !=')
+types = pp.one_of('normal fire water electric grass ice fighting poison ' + 
+                  'ground flying psychic bug rock ghost dragon dark fairy')
+logic = pp.one_of('and or')
+
+# Define regex to parse over
+query_format = ((int_keys + int_ops + pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0]))) | 
+                ('name' + str_ops + pp.Word(pp.printables)) | 
+                ('type' + str_ops + types)).set_parse_action(lambda tokens: [tokens])
+complex_query_format = query_format + (logic + query_format)[0,]
 
 auth = authentication()
-
-KEYS = ['index', 'hp', 'stage', 'name', 'type', 'quit', 'help']
-OPS = ['of', '==', '!=', '<=', '>=', '<', '>']
-TYPES = ['normal', 'fire', 'water', 'electric', 'grass', 'ice', 'fighting', 'poison', 
-        'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 'dragon', 'dark', 'fairy']
 
 def query_firebase(query):
     collection = auth.collection('pokemon')
@@ -39,7 +49,6 @@ def query_firebase(query):
             merge_type == ''
     
     result = docs
-
     return all_pokemon
 
 def merge_and(list1,list2):
@@ -71,32 +80,29 @@ def merge_or(list1,list2):
 def take_input():
     while True:
         valid_query = True
+        query = []
 
-        print('> ', end ='')
-        input_str = input().lower().strip().split(' ')
+        print('\n>', end='')
+        input_str = input().lower()
+        print()
 
-        if input_str[0] == 'quit':
+        # Handle special cases for input that to not match regular query structure
+        if input_str == 'quit':
             break
 
-        if input_str[0] == 'help':
+        if input_str == 'help':
             help()
+            continue
+        
+        # Attempt to parse input, print error message if it does not match query structure
+        try:
+            query = complex_query_format.parse_string(input_str, parse_all=True)
+        except pp.ParseException as ex:
+            print(ex)
+            print('Use \'help\' for more info')
+            valid_query = False
 
-        if input_str == ['']:
-            input_str = []
-
-        query = []
-        subquery = []
-        for word in input_str:
-            if word not in ['and', 'or']:
-                subquery.append(word)
-            else:
-                query.append(subquery)
-                subquery = []
-                query.append(word)
-        query.append(subquery)
-
-        valid_query = validate_input(query)
-
+        # If query was properly parsed, send it to firebase and print the result
         if valid_query:
             query_output = query_firebase(query)
 
