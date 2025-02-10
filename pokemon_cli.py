@@ -34,9 +34,17 @@ def query_firebase(query):
         if subquery in ['and', 'or']:
             merge_type = subquery
         else:
-            new_pokemon = []
-
             key, op, value = subquery
+
+        if op == 'of':
+            if isinstance(value, int):
+                docs = query_database('index', '==', value, auth)
+            else:
+                docs = query_database('name', '==', value, auth)
+            for doc in docs:
+                all_pokemon = Pokemon.from_dict(doc.to_dict())        
+        else:
+            new_pokemon = []
             docs = query_database(key, op, value, auth)
             for doc in docs:
                 new_pokemon.append(Pokemon.from_dict(doc.to_dict()))
@@ -51,7 +59,6 @@ def query_firebase(query):
 
             merge_type == ''
     
-    result = docs
     return all_pokemon
 
 def merge_and(list1,list2):
@@ -106,8 +113,11 @@ def take_input():
         # If query was properly parsed, send it to firebase and print the result
         if valid_query:
             query_output = query_firebase(query)
-
-            for pokemon in query_output:
+            if query[0][1] == 'of':
+              field = query[0][0]
+              print(getattr(query_output, field))
+            else:
+              for pokemon in query_output:
                 print(pokemon)
         else:
             print('Use \'help\' for more info')
