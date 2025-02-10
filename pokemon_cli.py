@@ -1,5 +1,4 @@
-from pokemon_firebase import authentication
-from google.cloud.firestore_v1.base_query import FieldFilter
+from pokemon_firebase import authentication, query_database
 from PokemonClass import Pokemon
 import pyparsing as pp
 
@@ -27,8 +26,6 @@ complex_query_format = (basic_query_format + (logic + basic_query_format)[0,]) |
 auth = authentication()
 
 def query_firebase(query):
-    collection = auth.collection('pokemon')
-
     all_pokemon = []
     merge_type = ''
 
@@ -40,8 +37,7 @@ def query_firebase(query):
             new_pokemon = []
 
             key, op, value = subquery
-            query_ref = collection.where(filter=FieldFilter(key, op, value))
-            docs = query_ref.get()
+            docs = query_database(key, op, value, auth)
             for doc in docs:
                 new_pokemon.append(Pokemon.from_dict(doc.to_dict()))
 
@@ -115,60 +111,6 @@ def take_input():
                 print(pokemon)
         else:
             print('Use \'help\' for more info')
-
-# def validate_input(query):
-#     valid_query = True
-
-#     for subquery in query:
-#         if subquery in ['and', 'or']:
-#             continue
-#         # checks that each subquery has the correct length
-#         elif len(subquery) != 3:
-#             valid_query = False
-#             print(f'Expected 3 arguments ([keyword] [operator] [value]), found {len(subquery)} ({" ".join(map(str, subquery))})')
-#             continue
-
-#         key, op, val = subquery
-
-#         # checks that the given key value is a valid keyword
-#         if key not in KEYS:
-#             valid_query = False
-#             print(f'Keyword \'{key}\' not recognized')
-        
-#         # checks that index, hp, and stage all get ints
-#         if key in KEYS[:3] and op != OPS[0]: 
-#             try:
-#                 subquery[2] = int(val)
-#             except:
-#                 valid_query = False
-#                 print(f'Keyword \'{key}\' requires an int, found \'{val}\'')
-
-#         # checks that name and type are only used with 'of' or '=='
-#         if key in KEYS[3:5] and op != OPS[0]: 
-#             if op not in OPS[:2]:
-#                 valid_query = False
-#                 print(f'Keyword \'{key}\' requires either \'of\' or \'==\' operators, found \'{op}\'')
-
-#         # checks that type is always passed a valid type
-#         if key == KEYS[4] and op != OPS[0]:
-#             if val not in TYPES:
-#                 valid_query = False
-#                 print(f'Keyword \'{key}\' requires a valid type (see \'help\'), found \'{val}\'')
-
-#         # checks that the given op value is a valid operator
-#         if op not in OPS:
-#             valid_query = False
-#             print(f'Operator \'{op}\' not recognized')
-
-#         # if the 'of' operator is passed, converts val to an int if it is numeric
-#         if op == OPS[0]:
-#             try:
-#                 subquery[2] = int(val)
-#             except:
-#                 subquery[2] = val
-
-#     return valid_query
-
 
 # Print overview of keywords and how to structure queries
 def help():
