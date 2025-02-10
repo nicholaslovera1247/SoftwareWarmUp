@@ -22,8 +22,9 @@ of_query_format = (
     (all_keys + 'of' + (pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0])) | pp.Word(pp.printables))) # Handles 'of' queries
     ).set_parse_action(lambda tokens: [tokens])
 
-# Complex queries, allows for using 'and' or 'or' to add multiple forms of logic
-complex_query_format = (basic_query_format + (logic + basic_query_format)[0,]) | of_query_format 
+# Complex queries, allows for using 'and' or 'or' to add multiple forms of logic, as well as 'of' queries
+query_format = (basic_query_format + (logic + basic_query_format)[0,]) | of_query_format 
+
 auth = authentication()
 
 def query_firebase(query):
@@ -102,7 +103,7 @@ def take_input():
         
         # Attempt to parse input, print error message if it does not match query structure
         try:
-            query = complex_query_format.parse_string(input_str, parse_all=True)
+            query = query_format.parse_string(input_str, parse_all=True)
         except pp.ParseException as ex:
             print(ex)
             valid_query = False
