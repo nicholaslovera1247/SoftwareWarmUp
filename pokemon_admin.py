@@ -1,5 +1,7 @@
-from pokemon_firebase import delete_collection, add_document, authentication
+"""Module docstring (TODO)"""
+
 import json
+from pokemon_firebase import delete_collection, add_document, authentication
 
 # authentication
 auth = authentication()
@@ -8,14 +10,14 @@ auth = authentication()
 delete_collection(auth)
 
 # Read json file
-json_file = "pokemon.json"
-with open(json_file, "r") as file:
-        json_data = json.load(file)
+JSON_FILE = "pokeemon.json"
+with open(JSON_FILE, "r", encoding='UTF-8') as file:
+    json_data = json.load(file)
 
 # Add documents to Firebase
 try:
     if isinstance(json_data, list):
         for document in json_data:
             add_document(document, auth)
-except Exception as e:
-        print(f"An error occurred: {e}")
+except FileNotFoundError as e:
+    print(f"An error occurred: {e}")
