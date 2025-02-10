@@ -8,40 +8,36 @@ types = pp.one_of('normal fire water electric grass ice fighting poison ' +
 logic = pp.one_of('and or')
 
 
-query_format = (int_keys + int_ops + pp.Word(pp.nums)) | ('name' + str_ops + pp.Word(pp.printables)) | ('type' + str_ops + types)
+# Define regex to parse over
+query_format = ((int_keys + int_ops + pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0]))) | 
+                ('name' + str_ops + pp.Word(pp.printables)) | 
+                ('type' + str_ops + types)).set_parse_action(lambda tokens: [tokens])
 complex_query_format = query_format + (logic + query_format)[0,]
 
 def take_input():
     while True:
         valid_query = True
-        input_list = ''
+        query = []
 
         print('\n>', end='')
         input_str = input().lower()
+        print()
 
+        # Handle special cases for input that to not match regular query structure
         if input_str == 'quit':
             break
 
         if input_str == 'help':
-            #help()
+            help()
             continue
         
+        # Attempt to parse input, print error message if it does not match query structure
         try:
-            input_list = complex_query_format.parse_string(input_str, parse_all=True)
+            query = complex_query_format.parse_string(input_str, parse_all=True)
         except pp.ParseException as ex:
             print(ex)
+            print('Use \'help\' for more info')
             valid_query = False
-
-        query = []
-        subquery = []
-        for word in input_list:
-            if word not in ['and', 'or']:
-                subquery.append(word)
-            else:
-                query.append(subquery)
-                subquery = []
-                query.append(word)
-        query.append(subquery)
 
         if valid_query:
             print(query)
