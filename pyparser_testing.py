@@ -14,7 +14,7 @@ complex_query_format = query_format + (logic + query_format)[0,]
 def take_input():
     while True:
         valid_query = True
-        query = ''
+        input_list = ''
 
         print('\n>', end='')
         input_str = input().lower()
@@ -27,10 +27,21 @@ def take_input():
             continue
         
         try:
-            query = complex_query_format.parse_string(input_str, parse_all=True)
+            input_list = complex_query_format.parse_string(input_str, parse_all=True)
         except pp.ParseException as ex:
             print(ex)
             valid_query = False
+
+        query = []
+        subquery = []
+        for word in input_list:
+            if word not in ['and', 'or']:
+                subquery.append(word)
+            else:
+                query.append(subquery)
+                subquery = []
+                query.append(word)
+        query.append(subquery)
 
         if valid_query:
             print(query)
