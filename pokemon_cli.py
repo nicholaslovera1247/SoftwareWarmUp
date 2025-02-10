@@ -83,7 +83,7 @@ def take_input():
         query = []
 
         print('\n>', end='')
-        input_str = input().lower()
+        input_str = input().lower().strip()
         print()
 
         # Handle special cases for input that to not match regular query structure
