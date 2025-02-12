@@ -118,7 +118,7 @@ def take_input():
         valid_query = True
         query = []
 
-        print('\n>', end='')
+        print('\n> ', end='')
         input_str = input().lower().strip()
         print()
 
@@ -140,7 +140,9 @@ def take_input():
         # If query was properly parsed, send it to firebase and print the result
         if valid_query:
             query_output = query_firebase(query)
-            if query[0][1] == 'of':
+            if query_output == []:
+                print("No results found.")
+            elif query[0][1] == 'of':
                 field = query[0][0]
                 print(getattr(query_output, field))
             else:
