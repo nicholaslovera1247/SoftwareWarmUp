@@ -114,6 +114,7 @@ def take_input():
     """Main body of the program, loops until exited and asks the user for input, 
     before validating the format and calling query_firebase() if appropriate"""
 
+    print("Welcome to the Pokemon CLI! Enter 'help' for more info on query format.")
     while True:
         valid_query = True
         query = []
