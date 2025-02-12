@@ -134,8 +134,8 @@ def take_input():
         # Attempt to parse input, print error message if it does not match query structure
         try:
             query = query_format.parse_string(input_str, parse_all=True)
-        except pp.ParseException as ex:
-            print(ex)
+        except pp.ParseException:
+            print("Invalid query.")
             valid_query = False
 
         # If query was properly parsed, send it to firebase and print the result
