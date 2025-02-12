@@ -1,5 +1,5 @@
 """Module that resets the Firebase database by deleting the existing collection 
-and creating a new collection based on "pokemon.csv" """
+and creating a new collection based on "pokemon.json" """
 
 import json
 from pokemon_firebase import delete_collection, add_document, authentication
