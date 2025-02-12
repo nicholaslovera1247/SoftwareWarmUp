@@ -1,4 +1,5 @@
-"""Module docstring (TODO)"""
+"""Module that resets the Firebase database by deleting the existing collection 
+and creating a new collection based on "pokemon.csv" """
 
 import json
 from pokemon_firebase import delete_collection, add_document, authentication
@@ -10,7 +11,7 @@ auth = authentication()
 delete_collection(auth)
 
 # Read json file
-JSON_FILE = "pokeemon.json"
+JSON_FILE = "pokemon.json"
 with open(JSON_FILE, "r", encoding='UTF-8') as file:
     json_data = json.load(file)
 

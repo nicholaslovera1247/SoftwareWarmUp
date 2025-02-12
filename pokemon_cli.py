@@ -1,4 +1,5 @@
-"""Module docstring (TODO)"""
+"""Module that runs a CLI program which asks the user for an input query based around Pokemon, 
+and prints the output of their query"""
 
 import pyparsing as pp
 from pokemon_firebase import authentication, query_database
@@ -40,7 +41,9 @@ query_format = (basic_query_format + (logic + basic_query_format)[0,]) | of_quer
 auth = authentication()
 
 def query_firebase(query):
-    """Method docstring (TODO)"""
+    """Takes a formatted query from take_input(), 
+    sends it to the Firebase database, and returns the result"""
+
     all_pokemon = []
     merge_type = ''
 
@@ -77,7 +80,8 @@ def query_firebase(query):
     return all_pokemon
 
 def merge_and(list1,list2):
-    """Method docstring (TODO)"""
+    """Takes 2 lists of Pokemon, and returns a list containing the intersection of those lists"""
+
     # Compare unique IDs of each document in the Google firestore
     set1 = {doc.index for doc in list1}
     set2 = {doc.index for doc in list2}
@@ -92,7 +96,8 @@ def merge_and(list1,list2):
     return rtnlist
 
 def merge_or(list1,list2):
-    """Method docstring (TODO)"""
+    """Takes 2 lists of Pokemon, and returns a list containing the union of those lists"""
+
     # Create a set to avoid duplicates
     seen = set()
     # Create a list that merges list 1 and list 2
@@ -106,7 +111,9 @@ def merge_or(list1,list2):
     return merged
 
 def take_input():
-    """Method docstring (TODO)"""
+    """Main body of the program, loops until exited and asks the user for input, 
+    before validating the format and calling query_firebase() if appropriate"""
+
     while True:
         valid_query = True
         query = []
@@ -118,7 +125,8 @@ def take_input():
         # Handle special cases for input that do not match regular query structure
         if input_str == 'quit':
             break
-        elif input_str == 'help':
+
+        if input_str == 'help':
             help_query()
             continue
 
@@ -142,7 +150,8 @@ def take_input():
             print('Use \'help\' for more info')
 
 def help_query():
-    """Method docstring (TODO)"""
+    """Prints the documentation for the query language, as well as some example queries"""
+
     print("Keywords: Index, name, type, HP, stage, help, quit \n"
           "Operators: ==, !=, <=, >=, <, >, <, >, and, of\n"
           "--------------------------------------------------\n"

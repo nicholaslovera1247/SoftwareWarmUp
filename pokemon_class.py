@@ -1,7 +1,9 @@
-"""Module docstring (TODO)"""
+"""Module that contains a Pokemon class"""
 
 class Pokemon:
-    """Class docstring (TODO)"""
+    """Represents a Pokemon from the Firebase database, 
+    used for easily printing the output of queries"""
+
     def __init__(self, index, name, element, hp, stage = None):
         self.index = index
         self.name = name
@@ -11,7 +13,8 @@ class Pokemon:
 
     @staticmethod
     def from_dict(param_dict):
-        """Method docstring (TODO)"""
+        """Returns an instance of a Pokemon initialized from dictionary values"""
+
         return Pokemon(
             param_dict['index'], param_dict['name'], param_dict['type'], param_dict['hp'],
             param_dict['stage'] if 'stage' in param_dict.keys() else None)
