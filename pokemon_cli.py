@@ -15,28 +15,34 @@ types = pp.one_of(
     ground flying psychic bug rock ghost dragon dark fairy'
     ) # Allowed types to query for
 logic = pp.one_of('and or') # Allowed forms of logic to combine multiple queries
+int_arg = pp.Word(pp.nums
+    ).set_parse_action(lambda tokens: int(tokens[0])) # Integer arguments, get converted into ints
+name_arg = (
+    pp.Word(pp.printables) |
+    '\"' + pp.Any() + '\"') # Name arguments, either a single word or grouped with quotes
+space = pp.White()[1,] # Whitespace between arguments
 
-# Define regex to parse over
+# Define building blocks for queries
+int_queries = int_keys + space + int_ops + space + int_arg
+name_queries = 'name' + space + str_ops + space + name_arg
+type_queries = 'type' + space + str_ops + space + types
+
+# Define basic grammar for queries
 basic_query_format = (
-    # Handles queries with int arguments
-    (int_keys + int_ops + pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0]))) |
-    # Handles 'name' queries
-    ('name' + str_ops + pp.Word(pp.printables)) |
-    # Handles 'type' queries
-    ('type' + str_ops + types)
-    # Nest queries into separate lists for easier parsing of complex queries
+    int_queries | name_queries | type_queries
     ).set_parse_action(lambda tokens: [tokens])
 
-# Handles 'of' queries
+# Define grammar for 'of' queries
 of_query_format = (
-    (all_keys + 'of' + (
-        pp.Word(pp.nums).set_parse_action(lambda tokens: int(tokens[0])) |
-        pp.Word(pp.printables)))
+    (all_keys + 'of' + (int_arg | name_arg))
     ).set_parse_action(lambda tokens: [tokens])
 
-# Complex queries, allows for using 'and' or 'or' to
+# Define grammar for complex queries, allows for using 'and' or 'or' to
 # add multiple forms of logic, as well as 'of' queries
-query_format = (basic_query_format + (logic + basic_query_format)[0,]) | of_query_format
+query_format = (
+    basic_query_format + (space + logic + space + basic_query_format)[0,] |
+    of_query_format
+    )
 
 auth = authentication()
 
@@ -133,8 +139,7 @@ def take_input():
         # Attempt to parse input, print error message if it does not match query structure
         try:
             query = query_format.parse_string(input_str, parse_all=True)
-        except pp.ParseException as ex:
-            print(ex)
+        except pp.ParseException:
             valid_query = False
 
         # If query was properly parsed, send it to firebase and print the result
@@ -147,7 +152,7 @@ def take_input():
                 for pokemon in query_output:
                     print(pokemon)
         else:
-            print('Use \'help\' for more info')
+            print('Invalid query.\nUse \'help\' for more info')
 
 def help_query():
     """Prints the documentation for the query language, as well as some example queries"""
