@@ -15,39 +15,39 @@ types = pp.one_of(
     ground flying psychic bug rock ghost dragon dark fairy'
     ) # Allowed types to query for
 logic = pp.one_of('and or') # Allowed forms of logic to combine multiple queries
-int_arg = pp.Word(pp.nums
-    ).set_parse_action(lambda tokens: int(tokens[0])) # Integer arguments, get converted into ints
-name_arg = (
-    pp.Word(pp.printables) |
-    '\"' + pp.Any() + '\"') # Name arguments, either a single word or grouped with quotes
-space = pp.White()[1,] # Whitespace between arguments
+int_arg = pp.Word( # Integer arguments, get converted into ints
+    pp.nums).set_parse_action(lambda tokens: int(tokens[0]))
+name_arg = ( # Name arguments, either a single word or grouped with quotes
+    pp.QuotedString('"') | pp.Word(pp.printables))
+space = pp.White() # Whitespace between arguments
 
 # Define building blocks for queries
 int_queries = int_keys + space + int_ops + space + int_arg
-name_queries = 'name' + space + str_ops + space + name_arg
-type_queries = 'type' + space + str_ops + space + types
+name_queries = pp.Literal('name') + space + str_ops + space + name_arg
+type_queries = pp.Literal('type') + space + str_ops + space + types
 
 # Define basic grammar for queries
 basic_query_format = (
     int_queries | name_queries | type_queries
-    ).set_parse_action(lambda tokens: [tokens])
+    ).set_parse_action(lambda tokens: [[tokens[0], tokens[2], tokens[4]]])
 
 # Define grammar for 'of' queries
 of_query_format = (
-    (all_keys + 'of' + (int_arg | name_arg))
-    ).set_parse_action(lambda tokens: [tokens])
+    (all_keys + space + pp.Literal('of') + space + (int_arg | name_arg))
+    ).set_parse_action(lambda tokens: [[tokens[0], tokens[2], tokens[4]]])
 
 # Define grammar for complex queries, allows for using 'and' or 'or' to
 # add multiple forms of logic, as well as 'of' queries
 query_format = (
-    basic_query_format + (space + logic + space + basic_query_format)[0,] |
+    basic_query_format + (space + logic + space + basic_query_format
+                          ).set_parse_action(lambda tokens: [tokens[1], tokens[3]])[0,] |
     of_query_format
     )
 
 auth = authentication()
 
 def query_firebase(query):
-    """Takes a formatted query from take_input(), 
+    """Takes a formatted query from take_input(),
     sends it to the Firebase database, and returns the result"""
 
     all_pokemon = []
